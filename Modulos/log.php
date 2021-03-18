@@ -34,7 +34,7 @@
     $username_err = $password_err = "";
      
     // Processing form data when form is submitted
-    if($_SERVER["REQUEST_METHOD"] == "POST"){
+    if(isset($_POST['logear'])){
      
         // Check if username is empty
         if(empty(trim($_POST["emailL"]))){

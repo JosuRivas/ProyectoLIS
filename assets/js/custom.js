@@ -194,7 +194,18 @@ $(document).ready(function(){
 
         });
         
-
 });	
+
+function hide(){
+    if (document.getElementById('radio-ida').checked == true) {
+        document.getElementById('fecha_regreso').readOnly = true;   
+    }
+    else{
+        document.getElementById('fecha_regreso').readOnly = false;
+    }
+    
+}
+
+
 
 	

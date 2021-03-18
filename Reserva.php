@@ -86,7 +86,7 @@
 	?>
     	<section id="" class="about-us">
 			<div class="container">
-            <br><br>
+            <br><br><br><br><br>
 				<div class="about-us-content">
 					<div class="row">
 						<div class="col-sm-12">
@@ -111,7 +111,7 @@
                                                                 <div class="tab-para">
                                                                     <div class="trip-circle">
                                                                         <div class="single-trip-circle">
-                                                                            <input type="radio" id="radio-ida-reg" name="radio" >
+                                                                            <input type="radio" id="radio-ida-reg" name="radio" onchange="hide()" value="ida-vuelta">
                                                                             <label for="radio-ida-reg">
                                                                                 <span class="round-boarder">
                                                                                     <span class="round-boarder1"></span>
@@ -119,7 +119,7 @@
                                                                             </label>
                                                                         </div><!--/.single-trip-circle-->
                                                                         <div class="single-trip-circle">
-                                                                            <input type="radio" id="radio-ida" name="radio" checked="checked">
+                                                                            <input type="radio" id="radio-ida" name="radio" checked="checked" onchange="hide()" value="ida">
                                                                             <label for="radio-ida">
                                                                                 <span class="round-boarder">
                                                                                     <span class="round-boarder1"></span>
@@ -134,11 +134,10 @@
                                                                                 <h2>Lugar de partida</h2>
 
                                                                                 <div class="travel-select-icon">
-                                                                                    <select class="form-control " required name="lugar_partida">
+                                                                                    <select class="form-control " name="lugar_partida">
                                                                                         <option value="default">Ingresa el aeropuerto de partida</option><!-- /.option-->
                                                                                         <option value="LAX Los Angeles International">LAX Los Angeles International</option><!-- /.option-->
-                                                                                        <option value="rusia">rusia</option><!-- /.option-->
-                                                                                        <option value="egipto">egipto</option><!-- /.option-->
+                                                                                        <option value="SAL Comalapa Internacional">SAL Comalapa Internacional</option><!-- /.option-->
                                                                                     </select><!-- /.select-->
                                                                                 </div><!-- /.travel-select-icon -->
                                                                             </div><!--/.single-tab-select-box-->
@@ -148,9 +147,20 @@
                                                                             <div class="single-tab-select-box">
                                                                                 <h2>Partida</h2>
                                                                                 <div class="travel-check-icon">
-                                                                                    <form action="#">
-                                                                                        <input type="date" name="fecha_ida" class="form-control" required>
-                                                                                    </form>
+                                                                                    
+                                                                                        <input type="date" name="fecha_ida" class="form-control">
+                                                                                    
+                                                                                </div><!-- /.travel-check-icon -->
+                                                                            </div><!--/.single-tab-select-box-->
+                                                                        </div><!--/.col-->
+
+                                                                        <div class="col-lg-2 col-md-3 col-sm-4">
+                                                                            <div class="single-tab-select-box">
+                                                                                <h2>Regreso</h2>
+                                                                                <div class="travel-check-icon">
+                                                                                    
+                                                                                        <input type="date" name="fecha_reg" class="form-control" id="fecha_regreso" readonly>
+                                                                                    
                                                                                 </div><!-- /.travel-check-icon -->
                                                                             </div><!--/.single-tab-select-box-->
                                                                         </div><!--/.col-->
@@ -183,14 +193,14 @@
                                                                                 <h2>Lugar de destino</h2>
 
                                                                                 <div class="travel-select-icon">
-                                                                                    <select class="form-control " required name="lugar_destino">
+                                                                                    <select class="form-control " name="lugar_destino">
 
                                                                                         <option value="default">Ingresa el lugar de destino</option><!-- /.option-->
 
                                                                                         <option value="SAL Comalapa Internacional">SAL Comalapa Internacional</option><!-- /.option-->
-
-                                                                                        <option value="moscu">moscu</option><!-- /.option-->
-                                                                                        <option value="cairo">cairo</option><!-- /.option-->
+                                                                                        <option value="LAX Los Angeles International">LAX Los Angeles International</option><!-- /.option-->
+                                                                                        <option value="BSB Presidente Juscelino Kubitschek Internacional">BSB Presidente Juscelino Kubitschek Internacional</option><!-- /.option-->
+                                                                                        <option value="JFK John F Kenndey International">JFK John F Kenndey International</option><!-- /.option-->
 
                                                                                     </select><!-- /.select-->
                                                                                 </div><!-- /.travel-select-icon -->
@@ -202,7 +212,7 @@
 
                                                                                 <h2>Clase</h2>
                                                                                 <div class="travel-select-icon">
-                                                                                    <select class="form-control " required name="clase">
+                                                                                    <select class="form-control " name="clase">
                                                                                         <option value="default">Ingresa la clase</option><!-- /.option-->
                                                                                         <option value="A">Primera clase</option><!-- /.option-->
                                                                                         <option value="B">Ejecutiva</option><!-- /.option-->
@@ -233,6 +243,7 @@
             $origen = trim($_POST['lugar_partida']);
             $destino = trim($_POST['lugar_destino']);
             $partida = trim($_POST['fecha_ida']);
+            $regreso = trim($_POST['fecha_reg']);
             $num_Adultos = (int)trim($_POST['Adultos']);
             $num_Niños = (int)trim($_POST['Niños']);
             $clase = trim($_POST['clase']);$_SESSION['clase'] = $clase;
@@ -251,57 +262,143 @@
             }
             $_SESSION['tarifa'] = $tarifa;
             try {
-                $sql = "SELECT Capacidad FROM vuelo WHERE Destino = '$destino' AND Origen = '$origen' AND Fecha_salida = '$partida'";
-                $result = mysqli_query($conn,$sql);
-
-                if (mysqli_num_rows($result) > 0) {
-                    $row = mysqli_fetch_assoc($result);
-                    $cap =  $row['Capacidad'];
-                    if ($cap > 0) {
-                        $sql2 = "SELECT Id_Vuelo, Origen, Destino, Fecha_salida, Hora, Numero_Vuelo FROM vuelo WHERE Destino = '$destino' AND Origen = '$origen' AND Fecha_salida = '$partida'";
-                        $resultado = mysqli_query($conn,$sql2);
-                        if(mysqli_num_rows($resultado) > 0){
-                            $row = mysqli_fetch_assoc($resultado);
-                            $id = $row['Id_Vuelo']; $salida = $row['Origen']; $llegada = $row['Destino']; $fecha = $row['Fecha_salida']; $hora = $row['Hora'];$vuelo = $row['Numero_Vuelo'];$_SESSION['vuelo'] = $vuelo;
+                if ($tipo_vuelo == 'ida-vuelta') {
+                    $_SESSION['regreso'] = true;
+                    $sql = "SELECT Capacidad FROM vuelo WHERE Destino = '$destino' AND Origen = '$origen' AND Fecha_salida = '$partida'";
+                    $result = mysqli_query($conn,$sql);
+                    if (mysqli_num_rows($result) > 0) {
+                        $row = mysqli_fetch_assoc($result);
+                        $cap =  $row['Capacidad'];
+                        if ($cap > 0) {
+                            $sql2 = "SELECT Id_Vuelo, Origen, Destino, Fecha_salida, Hora, Numero_Vuelo FROM vuelo WHERE Destino = '$destino' AND Origen = '$origen' AND Fecha_salida = '$partida'";
+                            $resultado = mysqli_query($conn,$sql2);
+                            if(mysqli_num_rows($resultado) > 0){
+                                $row = mysqli_fetch_assoc($resultado);
+                                $id = $row['Id_Vuelo']; $salida = $row['Origen']; $llegada = $row['Destino']; $fecha = $row['Fecha_salida']; $hora = $row['Hora'];$vuelo = $row['Numero_Vuelo'];$_SESSION['vuelo'] = $vuelo;
                             
-                           echo '<div class="container" style="padding:0">';
-                           echo '<table  class="table table-striped table-bordered nowrap">';
-                           echo '<caption><h3 style="color:white">Confirmar informacion del vuelo</h3></caption>';
-                           echo '<thead style="background-color:white">';
-                               echo '<tr>';
-                                   echo '<th>Vuelo</th>';
-                                   echo '<th>Salida</th>';
-                                   echo '<th>Llegada</th> ';  
-                                   echo '<th>Tarifa</th>'; 
-                                   echo '<th></th>';
-                               echo '</tr>';
-                           echo '</thead>';
-                           echo ' <tbody>';
-                               echo '<tr>';
-                                  echo ' <td>'.$vuelo.'</td>';
-                                   echo '<td>'.$hora.' -> '.$fecha.' -> '.$salida.'</td>';
-                                   echo '<td>'.$llegada.'</td>';
-                                   echo '<td>$'.$tarifa.'</td>';
-                                   echo '<td><form action="/PROYECTO/Reserva.php" name="frminsert" method="POST"><input class="btn btn-success" name="bt-confirmar" type="submit" value="Confirmar"></input></form></td>';
-                               echo '</tr>';
+                                echo '<div class="container" style="padding:0">';
+                                echo '<table  class="table table-striped table-bordered nowrap" style="background-color:white">';
+                                echo '<caption><h3 style="color:white">Confirmar informacion del vuelo</h3></caption>';
+                                echo '<thead style="background-color:white">';
+                                    echo '<tr>';
+                                        echo '<th>Vuelo</th>';
+                                        echo '<th>Salida</th>';
+                                        echo '<th>Llegada</th> ';  
+                                        echo '<th>Tarifa</th>'; 
+                                        echo '<th></th>';
+                                    echo '</tr>';
+                                echo '</thead>';
+                                echo ' <tbody>';
+                                    echo '<tr>';
+                                        echo '<td>'.$vuelo.'</td>';
+                                        echo '<td>'.$hora.' -> '.$fecha.' -> '.$salida.'</td>';
+                                        echo '<td>'.$llegada.'</td>';
+                                        echo '<td>$'.$tarifa.'</td>';
+                                }
+                                else {
+                                    echo "No se encontro ningun vuelo";
+                                }
+                            }
+                             else {
+                            echo "Ya no queda espacio en el vuelo seleccionado";
+                        }
+                    }
+                    else{
+                        echo 'No se enconontro ningun vuelo';
+                    }
+                    // vuelo de regreso
+                    $sql = "SELECT Capacidad FROM vuelo WHERE Destino = '$origen' AND Origen = '$destino' AND Fecha_salida = '$regreso'";
+                    $result = mysqli_query($conn,$sql);
+                    if (mysqli_num_rows($result) > 0) {
+                        $row = mysqli_fetch_assoc($result);
+                        $cap = $row['Capacidad'];
+                        if ($cap > 0) {
+                            $sql = "SELECT Id_Vuelo, Origen, Destino, Fecha_salida, Hora, Numero_Vuelo FROM vuelo WHERE Destino = '$origen' AND Origen = '$destino' AND Fecha_salida = '$regreso'";
+                            $result = mysqli_query($conn,$sql);
+                            $row = mysqli_fetch_assoc($result);
+                            $id = $row['Id_Vuelo']; $salida = $row['Origen']; $llegada = $row['Destino']; $fecha = $row['Fecha_salida']; $hora = $row['Hora'];$vuelo = $row['Numero_Vuelo'];$_SESSION['vuelo_r'] = $vuelo;
+
+                            echo '<tr style="background-color:white">';
+                                echo '<td>'.$vuelo.'</td>';
+                                echo '<td>'.$hora.' -> '.$fecha.' -> '.$salida.'</td>';
+                                echo '<td>'.$llegada.'</td>';
+                                echo '<td>$'.$tarifa.'</td>';
+                            echo '</tr>';
+                            echo '<tr>';
+                            echo '<td></td>';
+                            echo '<td></td>';
+                            echo '<td>Total:</td>';
+                            echo '<td>$'.$tarifa+$tarifa.'</td>';
+                            echo '<td><form action="/PROYECTO/Reserva.php" name="frminsert" method="POST"><input class="btn btn-success" name="bt-confirmar" type="submit" value="Confirmar"></input></form></td>';
+                            echo '</tr>';
                             echo '</tbody>';
                             echo '</table>';
                         }
                         else {
-                            //no se encontro resultado
+                            echo "No hay mas capacidad en el vuelo seleccionado";
                         }
                     }
+                    else {
+                        echo "No se encontro ningun vuelo";
+                    }
                 }
+                //vuelo solo de ida
                 else{
-                    echo 'no se enconontro resultado';
-                    // no se encontro resultado
-                }     
+                    $_SESSION['regreso'] = false;
+                    $sql = "SELECT Capacidad FROM vuelo WHERE Destino = '$destino' AND Origen = '$origen' AND Fecha_salida = '$partida'";
+                    $result = mysqli_query($conn,$sql);
+                    if (mysqli_num_rows($result) > 0) {
+                        $row = mysqli_fetch_assoc($result);
+                        $cap =  $row['Capacidad'];
+                        if ($cap > 0) {
+                            $sql2 = "SELECT Id_Vuelo, Origen, Destino, Fecha_salida, Hora, Numero_Vuelo FROM vuelo WHERE Destino = '$destino' AND Origen = '$origen' AND Fecha_salida = '$partida'";
+                            $resultado = mysqli_query($conn,$sql2);
+                            if(mysqli_num_rows($resultado) > 0){
+                                $row = mysqli_fetch_assoc($resultado);
+                                $id = $row['Id_Vuelo']; $salida = $row['Origen']; $llegada = $row['Destino']; $fecha = $row['Fecha_salida']; $hora = $row['Hora'];$vuelo = $row['Numero_Vuelo'];$_SESSION['vuelo'] = $vuelo;
+                            
+                                echo '<div class="container" style="padding:0">';
+                                echo '<table  class="table table-striped table-bordered nowrap">';
+                                echo '<caption><h3 style="color:white">Confirmar informacion del vuelo</h3></caption>';
+                                echo '<thead style="background-color:white">';
+                                    echo '<tr>';
+                                        echo '<th>Vuelo</th>';
+                                        echo '<th>Salida</th>';
+                                        echo '<th>Llegada</th> ';  
+                                        echo '<th>Tarifa</th>'; 
+                                        echo '<th></th>';
+                                    echo '</tr>';
+                                echo '</thead>';
+                                echo ' <tbody>';
+                                    echo '<tr>';
+                                        echo '<td>'.$vuelo.'</td>';
+                                        echo '<td>'.$hora.' -> '.$fecha.' -> '.$salida.'</td>';
+                                        echo '<td>'.$llegada.'</td>';
+                                        echo '<td>$'.$tarifa.'</td>';
+                                        echo '<td><form action="/PROYECTO/Reserva.php" name="frminsert" method="POST"><input class="btn btn-success" name="bt-confirmar" type="submit" value="Confirmar"></input></form></td>';
+                                    echo '</tr>';
+                                    echo '</tbody>';
+                                    echo '</table>';
+                                }
+                                else {
+                                    echo "No se encontro resultado";
+                                }
+                            }
+                             else {
+                            echo "Ya no queda espacio en el vuelo seleccionado";
+                        }
+                    }
+                    else{
+                        echo 'No se enconontro resultado';
+                    } 
+                }    
             } catch (Exception $e) {
                 echo 'error: ' . $e ->getMessage();
             }
             mysqli_close($conn);
         }
         include "Modulos/conexion_db.php";
+        //confirmacion de vuelo
         if (isset($_POST['bt-confirmar'])) {
             $id_cliente = "";
             $comprobante = 0;
@@ -322,10 +419,8 @@
             if (mysqli_num_rows($result) > 0) {
                 $row = mysqli_fetch_assoc($result);
                 $id_vuelo =  $row['Id_Vuelo'];
-            }
-            else{
-            }
-            while (true) {
+            }$i = 0;
+            while ($i < 222) {
                 $seat = randomSeat($_SESSION['clase']);
                 $sql = "SELECT * FROM pasaje WHERE Asiento = '$seat'";
                 $result = mysqli_query($conn,$sql);
@@ -333,6 +428,7 @@
                     break;
                 }
             else{
+                $i++;
             } 
             }
             $clase = $_SESSION['clase'];$tarifa = $_SESSION['tarifa'];
@@ -360,7 +456,80 @@
             else{
                 echo "error" . $sql . "<br>" . mysqli_error($conn);
             }
+            $sql = "SELECT Capacidad FROM vuelo WHERE Numero_Vuelo = '$vuelo'";
+            $result = mysqli_query($conn,$sql);
+            if (mysqli_num_rows($result) > 0) {
+                $row = mysqli_fetch_assoc($result);
+                $cap =  $row['Capacidad'];
+                if ($cap > 0) {
+                    $sql = "UPDATE vuelo SET Capacidad = Capacidad - 1 WHERE Numero_Vuelo = '$vuelo'";
+                    $result = mysqli_query($conn,$sql);
+                }
+                else {
+                    echo "error, ya no quedan espacios en este vuelo";
+                }
+            }
+            // si hay vuelo de ida y regreso
+            if ($_SESSION['regreso'] == true) {
+                $vuelo = $_SESSION['vuelo_r'];
+                $sql = "SELECT Id_Vuelo FROM vuelo WHERE Numero_Vuelo = '$vuelo'";
+                $result = mysqli_query($conn,$sql);
+                if (mysqli_num_rows($result) > 0) {
+                    $row = mysqli_fetch_assoc($result);
+                    $id_vuelo =  $row['Id_Vuelo'];
+                }
+                $i = 0;
+                while ($i < 222) {
+                    $seat = randomSeat($_SESSION['clase']);
+                    $sql = "SELECT * FROM pasaje WHERE Asiento = '$seat'";
+                    $result = mysqli_query($conn,$sql);
+                    if (mysqli_num_rows($result) == 0) {
+                        break;
+                    }
+                    else{
+                        $i++;
+                    } 
+                }
+                $clase = $_SESSION['clase'];$tarifa = $_SESSION['tarifa'];
+                $sql = "INSERT INTO pasaje(Id_Cliente,Id_vuelo,Clase,Asiento,Monto) VALUES($id_cliente,'$id_vuelo','$clase','$seat',$tarifa)";
+                if (mysqli_query($conn,$sql)) {
+                }
+                else {
+                    echo "error" . $sql . "<br>" . mysqli_error($conn);
+                }
 
+                $sql = "SELECT Id_Pasaje FROM pasaje WHERE Id_Cliente = '$id_cliente' AND Id_vuelo = '$id_vuelo'";
+                $result = mysqli_query($conn,$sql);
+                if (mysqli_num_rows($result) > 0) {
+                    $row = mysqli_fetch_assoc($result);
+                    $id_pasaje =  $row['Id_Pasaje'];
+                }
+                else{
+                }
+                $sql = "SELECT * FROM pago";
+                $result = mysqli_query($conn,$sql);
+                $comprobante = (int)mysqli_num_rows($result) + 1 ;
+                $date = date("Y-m-d");
+                $sql = "INSERT INTO pago(Monto,Numero_Comprobante,Id_Pasaje,Fecha) VALUES($tarifa,$comprobante,$id_pasaje,'$date')";
+                if (mysqli_query($conn,$sql)) {  
+                }
+                else{
+                    echo "error" . $sql . "<br>" . mysqli_error($conn);
+                }
+                $sql = "SELECT Capacidad FROM vuelo WHERE Numero_Vuelo = '$vuelo'";
+                $result = mysqli_query($conn,$sql);
+                if (mysqli_num_rows($result) > 0) {
+                    $row = mysqli_fetch_assoc($result);
+                    $cap =  $row['Capacidad'];
+                    if ($cap > 0) {
+                        $sql = "UPDATE vuelo SET Capacidad = Capacidad - 1 WHERE Numero_Vuelo = '$vuelo'";
+                        $result = mysqli_query($conn,$sql);
+                    }
+                    else {
+                        echo "error, ya no quedan espacios en este vuelo";
+                    }
+                }
+                }
         }
         mysqli_close($conn);
     ?>
