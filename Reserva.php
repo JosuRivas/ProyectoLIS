@@ -83,6 +83,10 @@
                 $_SESSION['seat'] = $seat;
                 return $seat;
             }
+
+            function alerta($msg){
+                echo "<script>alert('$msg');</script>";
+            }
 	?>
     	<section id="" class="about-us">
 			<div class="container">
@@ -400,6 +404,7 @@
         include "Modulos/conexion_db.php";
         //confirmacion de vuelo
         if (isset($_POST['bt-confirmar'])) {
+            $success = 0;
             $id_cliente = "";
             $comprobante = 0;
             $user = $_SESSION['username'];
@@ -434,6 +439,7 @@
             $clase = $_SESSION['clase'];$tarifa = $_SESSION['tarifa'];
             $sql = "INSERT INTO pasaje(Id_Cliente,Id_vuelo,Clase,Asiento,Monto) VALUES($id_cliente,'$id_vuelo','$clase','$seat',$tarifa)";
             if (mysqli_query($conn,$sql)) {
+                $success += 1;
             }
             else {
                 echo "error" . $sql . "<br>" . mysqli_error($conn);
@@ -451,7 +457,8 @@
             $comprobante = (int)mysqli_num_rows($result) + 1 ;
             $date = date("Y-m-d");
             $sql = "INSERT INTO pago(Monto,Numero_Comprobante,Id_Pasaje,Fecha) VALUES($tarifa,$comprobante,$id_pasaje,'$date')";
-            if (mysqli_query($conn,$sql)) {  
+            if (mysqli_query($conn,$sql)) {
+                $success += 1;
             }
             else{
                 echo "error" . $sql . "<br>" . mysqli_error($conn);
@@ -493,6 +500,7 @@
                 $clase = $_SESSION['clase'];$tarifa = $_SESSION['tarifa'];
                 $sql = "INSERT INTO pasaje(Id_Cliente,Id_vuelo,Clase,Asiento,Monto) VALUES($id_cliente,'$id_vuelo','$clase','$seat',$tarifa)";
                 if (mysqli_query($conn,$sql)) {
+                    $success += 1;
                 }
                 else {
                     echo "error" . $sql . "<br>" . mysqli_error($conn);
@@ -511,7 +519,8 @@
                 $comprobante = (int)mysqli_num_rows($result) + 1 ;
                 $date = date("Y-m-d");
                 $sql = "INSERT INTO pago(Monto,Numero_Comprobante,Id_Pasaje,Fecha) VALUES($tarifa,$comprobante,$id_pasaje,'$date')";
-                if (mysqli_query($conn,$sql)) {  
+                if (mysqli_query($conn,$sql)) {
+                    $success += 1;
                 }
                 else{
                     echo "error" . $sql . "<br>" . mysqli_error($conn);
@@ -529,7 +538,13 @@
                         echo "error, ya no quedan espacios en este vuelo";
                     }
                 }
-                }
+            }
+            if ($success == 2 || $success == 4) {
+                alerta("Se ha reservado su vuelo satisfactoriamente!");
+            }
+            else {
+                alerta("Ha ocurrido un error al ingresar su vuelo, inténtelo de nuevo");
+            }
         }
         mysqli_close($conn);
     ?>
