@@ -88,6 +88,9 @@
                 echo "<script>alert('$msg');</script>";
             }
 	?>
+    <?php
+    include "Modulos/log.php"
+    ?>
     	<section id="" class="about-us">
 			<div class="container">
             <br><br><br><br><br>
@@ -237,6 +240,10 @@
                                                         </div><!--/.tab content-->
                                                     </div><!--/.desc-tabs-->
                                                 </div><!--/.single-travel-box-->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
         <?php
         $tipo_vuelo = "";$origen = "";$destino ="";$partida = "";$num_Adultos ="";$num_Niños ="";$id_pasaje = "";
         $clase =""; $id_vuelo = "";$llegada = "";$salida = "";$fecha = "";$hora = "";$vuelo = "";$tarifa = 0;
@@ -404,7 +411,8 @@
         include "Modulos/conexion_db.php";
         //confirmacion de vuelo
         if (isset($_POST['bt-confirmar'])) {
-            $success = 0;
+            if (isset($_SESSION['username'])) {
+                $success = 0;
             $id_cliente = "";
             $comprobante = 0;
             $user = $_SESSION['username'];
@@ -544,6 +552,10 @@
             }
             else {
                 alerta("Ha ocurrido un error al ingresar su vuelo, inténtelo de nuevo");
+            }
+            }
+            else {
+                alerta("Debe iniciar sesion con su usuario para poder hacer reservas!");
             }
         }
         mysqli_close($conn);
