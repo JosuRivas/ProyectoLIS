@@ -207,7 +207,7 @@
                                                                                         <option value="SAL Comalapa Internacional">SAL Comalapa Internacional</option><!-- /.option-->
                                                                                         <option value="LAX Los Angeles International">LAX Los Angeles International</option><!-- /.option-->
                                                                                         <option value="BSB Presidente Juscelino Kubitschek Internacional">BSB Presidente Juscelino Kubitschek Internacional</option><!-- /.option-->
-                                                                                        <option value="JFK John F Kenndey International">JFK John F Kenndey International</option><!-- /.option-->
+                                                                                        <option value="JFK John F Kennedy International">JFK John F Kennedy International</option><!-- /.option-->
 
                                                                                     </select><!-- /.select-->
                                                                                 </div><!-- /.travel-select-icon -->
@@ -350,7 +350,7 @@
                         }
                     }
                     else {
-                        echo "No se encontro ningun vuelo";
+                        alerta("no se encontro ningun vuelo");
                     }
                 }
                 //vuelo solo de ida
@@ -392,7 +392,7 @@
                                     echo '</table>';
                                 }
                                 else {
-                                    echo "No se encontro resultado";
+                                    alerta("no se encontro ningun vuelo");
                                 }
                             }
                              else {
@@ -400,7 +400,7 @@
                         }
                     }
                     else{
-                        echo 'No se enconontro resultado';
+                        alerta("no se encontro ningun vuelo");
                     } 
                 }    
             } catch (Exception $e) {

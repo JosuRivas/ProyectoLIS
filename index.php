@@ -59,6 +59,18 @@
 	<body>
 	<?php
 	session_start();
+		$abrir = fopen("assets/js/counter.txt","r");
+		if (!$abrir) {
+			echo "no se puedo abrir el mensaje";
+		}
+		else{
+			$counter = (int)fread($abrir,20);
+			fclose($abrir);
+			$counter++;
+			$abrir = fopen("assets/js/counter.txt","w");
+			fwrite($abrir,$counter);
+			fclose($abrir);
+		}
 	?>
 		<!--[if lte IE 9]>
 		<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade
@@ -216,7 +228,7 @@
                                                                                         <option value="SAL Comalapa Internacional">SAL Comalapa Internacional</option><!-- /.option-->
                                                                                         <option value="LAX Los Angeles International">LAX Los Angeles International</option><!-- /.option-->
                                                                                         <option value="BSB Presidente Juscelino Kubitschek Internacional">BSB Presidente Juscelino Kubitschek Internacional</option><!-- /.option-->
-                                                                                        <option value="JFK John F Kenndey International">JFK John F Kenndey International</option><!-- /.option-->
+                                                                                        <option value="JFK John F Kennedy International">JFK John F Kennedy International</option><!-- /.option-->
 
                                                                                     </select><!-- /.select-->
                                                                                 </div><!-- /.travel-select-icon -->

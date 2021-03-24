@@ -11,7 +11,7 @@
 				echo '<li class="smooth-menu"><a href="'.$key.'">'.$value.'</a></li>';
 			}
 			
-            echo '<li class="smooth-menu">'.$_SESSION['username']."</li>";
+            echo '<li class="smooth-menu"><a href="#" style="color:#08c95f">'.$_SESSION['username']."</a></li>";
 			echo '<li><a href="Modulos/logout.php">Cerrar sesion</a></li>';
 			echo '</ul>';
 		}

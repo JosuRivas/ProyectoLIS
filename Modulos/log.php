@@ -52,7 +52,7 @@
         // Validate credentials
         if(empty($username_err) && empty($password_err)){
             // Prepare a select statement
-            $sql = "SELECT id_Usuario, Username, contraseña FROM usuario WHERE Username = ?";
+            $sql = "SELECT id_Usuario, Username, contraseña, Tipo_User FROM usuario WHERE Username = ?";
             
             if($stmt = mysqli_prepare($conn, $sql)){
                 // Bind variables to the prepared statement as parameters
@@ -69,12 +69,19 @@
                     // Check if username exists, if yes then verify password
                     if(mysqli_stmt_num_rows($stmt) == 1){                    
                         // Bind result variables
-                        mysqli_stmt_bind_result($stmt, $id, $username, $hashed_password);
+                        mysqli_stmt_bind_result($stmt, $id, $username, $hashed_password, $tipo_user);
                         if(mysqli_stmt_fetch($stmt)){
                                 $_SESSION["loggedin"] = true;
                                 $_SESSION["id"] = $id;
-                                $_SESSION["username"] = $username;    
-                                echo "<script>window.location = \"index.php\"</script> ";                       
+                                $_SESSION["username"] = $username;
+                                $_SESSION["tipo_user"] = $tipo_user;
+                                if ($_SESSION["tipo_user"] == "cliente") {
+                                    echo "<script>window.location = \"index.php\"</script> ";  
+                                }
+                                elseif ($_SESSION["tipo_user"] == "admin") {
+                                    echo "<script>window.location = \"adminpage.php\"</script> ";  
+                                }
+                                                     
                         }
                     } else{
                         // Display an error message if username doesn't exist
