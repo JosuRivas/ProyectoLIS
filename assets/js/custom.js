@@ -57,18 +57,6 @@ $(document).ready(function(){
 
     // 2. range js
         
-        $( "#slider-range" ).slider({
-            range: true,
-            min: 0,
-            max: 12000,
-            values: [ 2677, 9241 ],
-            slide: function( event, ui ) {
-            $( "#amount" ).val( "$" + ui.values[ 0 ] + " - $" + ui.values[ 1 ] );
-            }
-        });
-        $( "#amount" ).val( "$" + $( "#slider-range" ).slider( "values", 0 ) +
-        " - $" + $( "#slider-range" ).slider( "values", 1 ) );
-        
         
         // Quantity Buttons Shop
     
@@ -121,42 +109,10 @@ $(document).ready(function(){
         // i. #testimonial-carousel
     
         
-        var owl=$('#testemonial-carousel');
-        owl.owlCarousel({
-            items:3,
-            margin:0,
-            
-            loop:true,
-            autoplay:true,
-            smartSpeed:1000,
-            
-            //nav:false,
-            //navText:["<i class='fa fa-angle-left'></i>","<i class='fa fa-angle-right'></i>"],
-            
-            dots:true,
-            autoplayHoverPause:true,
         
-            responsiveClass:true,
-                responsive:{
-                    0:{
-                        items:1
-                    },
-                    640:{
-                        items:1
-                    },
-                    767:{
-                        items:2
-                    },
-                    992:{
-                        items:3
-                    }
-                }
-            
-            
-        });
 
     // 5. datepicker
-            $('[data-toggle="datepicker"]').datepicker();
+         
 
     // 6. Smooth Scroll spy
         

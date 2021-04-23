@@ -116,9 +116,6 @@
 						</div>
 					</div><!--/.about-us-content-->
 				</form>
-			</div><!--/.container-->
-		</section><!--/.about-us-->
-		<section class="service">
 				<?php
 					include "Modulos/conexion_db.php";
 					if (isset($_POST['bt-vuelos'])) {
@@ -233,13 +230,254 @@
 						}
 					}
 				?>
-		</section>
+			</div><!--/.container-->
+			
+		</section><!--/.about-us-->
+		<section class="travel-box" id="Controls">
+		<div class="container p-3"><h2>Herramientas de administrador</h2></div><br>
+		<div id="exTab2" class="container border border-success p-3 rounded">	
+    	<form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="POST" name="frm-menu" id="frm-menu"> 
+        	<ul class="nav nav-tabs nav-fill">
+				<li class="active nav-item text-dark">
+                <a class="text-light bg-info nav-link" href="#1" data-toggle="tab" id="esconder1">Agregar vuelo nuevo</a>
+				</li>
+				<li class="nav-item"><a class="text-light bg-info nav-link" href="#2" data-toggle="tab" id="mostrar">Aregar aerolinea nueva</a>
+				</li>
+				<li class="nav-item"><a class="text-light bg-info nav-link" href="#3" data-toggle="tab" id="esconder2">Eliminar vuelos</a>
+				</li>
+           	 	<li class="nav-item"><a class="text-light bg-info nav-link" href="#4" data-toggle="tab" id="esconder3">Modificar vuelos</a>
+				</li>
+			</ul>
+        <br>
+			<div class="tab-content ">
+			    <div class="tab-pane active" id="1">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <h3>Nombre aerolinea:</h3>
+                                <input type="text" name="NombreA" class="form-control" id="NombreA">
+                            </div>
+                            <div class="col-sm-3">
+                                <h3>Capacidad del vuelo:</h3>
+                                <input type="text" name="CapacidadV" class="form-control">
+                            </div>
+                            <div class="col-sm-3">
+                                <h3>Aeropuerto Origen</h3>
+                                <input type="text" name="Origen" class="form-control" style="width: 240px;" step=".01">
+                            </div>
+                        </div><br>
+						<div class="row">
+							<div class="col-sm-3">
+								<h3>Aeropuerto destino:</h3>
+								<input type="text" name="Destino" class="form-control">
+							</div>
+							<div class="col-sm-3">
+								<h3>Fecha salida:</h3>
+								<input type="date" class="form-control" name="FechaSalida">
+							</div>
+							<div class="col-sm-3">
+								<h3>Hora partida:</h3> 
+								<input type="time" class="form-control" name="HoraPartida" value="22:10">
+							</div>
+						</div><br>
+                        <div class="row">
+							<div class="col-sm-3">
+								<h3>Codigo de vuelo:</h3>
+								<input type="text" class="form-control" name="CodigoVuelo">
+							</div>
+                            <div class="col-sm-3" style="margin-top: 52px;">
+                            <input type="submit" class="btn btn-danger form-control" name="bt-ingresar-vuelo" value="Ingresar" >
+                            </div>
+                        </div>
+                    </div>        
+			    </div>
+				<div class="tab-pane" id="2">
+                    <div class="row">
+						<div class="col-sm-3">
+							<h3>Nombre aerolinea:</h3>
+							<input type="text" name="NombreAerolinea" class="form-control">
+						</div>
+						<div class="col-sm-3">
+							<h3>Codigo de pais:</h3>
+							<input type="text" name="CodigoPais" class="form-control">
+						</div>
+						<div class="col-sm-3">
+							<h3>Telefono:</h3>
+							<input type="text" name="Telefono" class="form-control">
+						</div>
+					</div><br>
+					<div class="row">
+					<div class="col-sm-3">
+						<input type="submit" class="btn btn-danger form-control" name="bt-ingresar-aerolinea" value="Ingresar">
+					</div>
+					</div>
+				</div>
+                <div class="tab-pane" id="3">
+                    <div class="row">
+                        <div class="col-sm-4">
+						<h3>Ingrese el Codigo de vuelo del vuelo a eliminar:</h3>
+                            <input type="text" class="form-control" name="BorrarVuelo"><br>
+                            <input type="submit" class="btn btn-warning form-control" name="bt-delete" value="Eliminar" id="eliminar">
+                        </div>
+                    </div>  
+				</div>
+                <div class="tab-pane" id="4">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-4">
+								<h3>Vuelo a modificar:</h3>
+                                <input type="text" class="form-control" name="codigo-viejo" placeholder="Codigo del vuelo a modificar :">
+                            </div>
+							<div class="col-sm-4">
+								<h3>Modificar fecha partida</h3>
+								<input class= "form-control" type="checkbox" name="cbox-fecha" id="cbox-fecha">
+								
+							</div>
+							<div class="col-sm-4">
+							<h3>Modificar hora partida</h3>
+							<input type="checkbox" name="cbox-hora" id="cboxh" class="form-control">
+							</div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <h3>Nueva fecha:</h3>
+                                <input type="date" class="form-control" name="FechaNueva" id="Nfecha" readonly>
+                            </div>
+							<div class="col-sm-4">
+								<h3>Nueva hora salida:</h3>
+								<input type="time" class="form-control" name="HoraNueva" value="23:11" id="Nhora" readonly>
+							</div>
+                        </div><br>
+						<div class="row">
+						<div class="col-sm-4">
+							<input type="submit" class="btn btn-primary" name="bt-update" value="Modificar">
+						</div>
+						</div>
+                    </div> 
+				</div>
+                <div class="tab-pane" id="5">                    
+				</div>
+		    </div>
+    </form>
+  </div>
+  <?php   
+            if (isset($_POST['NombreA']) && $_POST['NombreA']!="" && $_POST['CapacidadV']!="" && $_POST['FechaSalida']!="" && $_POST['HoraPartida']!="" && $_POST['Origen']!=""&& $_POST['Destino']!=""&& $_POST['CodigoVuelo']!="") {
+                include_once "Modulos/conexion_db.php";
+                $nombre = trim($_POST['NombreA']);$capacidad = trim($_POST['CapacidadV']);$fecha = trim($_POST['FechaSalida']);$hora = trim($_POST['HoraPartida']); $id = 0;
+				$origen = trim($_POST['Origen']);$destino = trim($_POST['Destino']);$codigo = trim($_POST['CodigoVuelo']);
+
+				$sql = "SELECT Id_Aerolinea FROM aerolinea WHERE Nombre = '$nombre'";
+				$result = mysqli_query($conn,$sql);
+				if (mysqli_num_rows($result) > 0) {
+					$row = mysqli_fetch_assoc($result);
+					$id = $row['Id_Aerolinea'];
+
+					$sql = "INSERT INTO vuelo(Id_Aerolinea,Capacidad,Origen,Destino,Fecha_salida,Hora,Numero_Vuelo) VALUES('$id','$capacidad','$origen','$destino','$fecha','$hora','$codigo')";
+                	if ($result = mysqli_query($conn,$sql)) {
+                    	alerta("Se ha ingresado correctamente el vuelo");
+                	}
+                	else {
+                    	alerta("Ha ocurrido un error: " .mysqli_error($conn));
+                		}
+                		mysqli_close($conn);
+					}
+				else {
+					alerta("No se encontró la aerolinea seleccionada");
+					mysqli_close($conn);
+				}    
+				
+            }
+            if (isset($_POST['NombreAerolinea']) && isset($_POST['CodigoPais']) && isset($_POST['Telefono']) && $_POST['NombreAerolinea']!="" && $_POST['CodigoPais']!="" && $_POST['Telefono']!="") {
+                include_once "Modulos/conexion_db.php";
+				$name = $_POST['NombreAerolinea'];$codarea = $_POST['CodigoPais'];$tel = $_POST['Telefono'];
+                $sql = "INSERT INTO aerolinea(Nombre,Codigo_Area,Telefono) VALUES('$name','$codarea','$tel')";
+                $result = mysqli_query($conn,$sql);
+				if ($result = mysqli_query($conn,$sql)) {
+					alerta("Se ha ingresado correctamente el vuelo");
+				}
+				else {
+					alerta("Ha ocurrido un error: " .mysqli_error($conn));
+				}
+				mysqli_close($conn);
+            }
+        if (isset($_POST['BorrarVuelo']) && $_POST['BorrarVuelo']!="") {
+            include_once "Modulos/conexion_db.php";
+            if (isset($_POST['BorrarVuelo'])) {
+                $delete = trim($_POST['BorrarVuelo']);
+                $sql = "DELETE FROM vuelo WHERE Numero_Vuelo = '$delete'";
+                $result = mysqli_query($conn,$sql);
+                if (mysqli_affected_rows($conn) > 0) {
+                    alerta("El vuelo ha sido eliminado correctamente");
+                }
+                elseif (mysqli_affected_rows($conn) == 0) {
+                    alerta("Ese vuelo no se encuentra en la base de datos");
+                } 
+                else {
+                    alerta("No se ha podido eliminar el vuelo");
+                }
+            }
+            mysqli_close($conn);
+        }
+        if (isset($_POST['FechaNueva']) && isset($_POST['HoraNueva']) && isset($_POST['codigo-viejo']) && $_POST['FechaNueva']!="" && $_POST['HoraNueva']!="" && $_POST['codigo-viejo']) {
+			include_once "Modulos/conexion_db.php";
+			$fechaN = $_POST['FechaNueva'];$horaN = $_POST['HoraNueva'];$cod = $_POST['codigo-viejo'];
+			
+			$sql = "UPDATE vuelo SET Fecha_salida = '$fechaN', Hora = '$horaN' WHERE Numero_Vuelo = '$cod'";
+			$result = mysqli_query($conn,$sql);
+			if (mysqli_affected_rows($conn) > 0) {
+				alerta("El vuelo ha sido modificado");
+			}
+			elseif (mysqli_affected_rows($conn) == 0) {
+				alerta("Ese vuelo no se encuentra en la base de datos");
+			} 
+			else {
+				alerta("No se ha podido eliminar el vuelo");
+			}
+			mysqli_close($conn);
+		}
+		elseif (isset($_POST['FechaNueva']) && isset($_POST['codigo-viejo']) && $_POST['FechaNueva']!="" && $_POST['codigo-viejo']) {
+			include_once "Modulos/conexion_db.php";
+			$fechaN = $_POST['FechaNueva'];$cod = $_POST['codigo-viejo'];
+
+			$sql = "UPDATE vuelo SET Fecha_salida = '$fechaN' WHERE Numero_Vuelo = '$cod'";
+			$result = mysqli_query($conn,$sql);
+			if (mysqli_affected_rows($conn) > 0) {
+				alerta("El vuelo ha sido modificado");
+			}
+			elseif (mysqli_affected_rows($conn) == 0) {
+				alerta("Ese vuelo no se encuentra en la base de datos");
+			} 
+			else {
+				alerta("No se ha podido eliminar el vuelo");
+			}
+			mysqli_close($conn);
+		}
+		elseif (isset($_POST['HoraNueva']) && isset($_POST['codigo-viejo']) && $_POST['HoraNueva']!="" && $_POST['codigo-viejo']) {
+			include_once "Modulos/conexion_db.php";
+			$horaN = $_POST['HoraNueva'];$cod = $_POST['codigo-viejo'];
+
+			$sql = "UPDATE vuelo SET Hora = '$horaN' WHERE Numero_Vuelo = '$cod'";
+			$result = mysqli_query($conn,$sql);
+			if (mysqli_affected_rows($conn) > 0) {
+				alerta("El vuelo ha sido modificado");
+			}
+			elseif (mysqli_affected_rows($conn) == 0) {
+				alerta("Ese vuelo no se encuentra en la base de datos");
+			} 
+			else {
+				alerta("No se ha podido eliminar el vuelo");
+			}
+			mysqli_close($conn);
+		}
+        ?>
 
 		<?php
 		include 'Modulos/footer.php';
 		?>
-
-
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+		<script src="assets/js/adminajax.js"></script>
+		<script src="assets/js/custom.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>	
 		<script src="assets/js/jquery.js"></script>
 		<!-- Include all compiled plugins (below), or include individual files as needed -->
 
@@ -275,6 +513,7 @@
         <script  src="assets/js/datepicker.js"></script>
 
 		<!--Custom JS-->
-		<script src="assets/js/custom.js"></script>
+
+		
     </body>
     

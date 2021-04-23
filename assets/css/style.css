@@ -1566,6 +1566,31 @@ input[type=number]::-webkit-outer-spin-button {
     border-bottom: 3px solid #fff;
     margin: 0 10px;
   }
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+input[type=number] {
+    -moz-appearance:textfield; /* Firefox */
+    width: 40px;
+}
+#exTab2 h3 {
+    color : #428bca;
+    padding-top: 10%;
+  }
+  
+  /* remove border radius for the tab */
+  
+  #exTab1 .nav-pills > li > a {
+    border-radius: 0;
+  }
+  #Controls{
+      margin-top: 50px;
+      margin-bottom: 50px;
+  }
 
 
 /*========================Thank you=================*/

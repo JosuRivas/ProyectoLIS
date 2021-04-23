@@ -10,8 +10,12 @@
 			foreach ($tabs as $key => $value) {
 				echo '<li class="smooth-menu"><a href="'.$key.'">'.$value.'</a></li>';
 			}
-			
-            echo '<li class="smooth-menu"><a href="#" style="color:#08c95f">'.$_SESSION['username']."</a></li>";
+			if ($_SESSION["tipo_user"] == "admin") {
+				echo '<li class="smooth-menu"><a href="adminpage.php" style="color:#08c95f">'.$_SESSION['username']."</a></li>";
+			}
+			else {
+				echo '<li class="smooth-menu"><a href="#" style="color:#08c95f">'.$_SESSION['username']."</a></li>";
+			}
 			echo '<li><a href="Modulos/logout.php">Cerrar sesion</a></li>';
 			echo '</ul>';
 		}

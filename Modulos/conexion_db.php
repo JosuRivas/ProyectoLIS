@@ -12,8 +12,4 @@
         die("Coneccion fallida: %s\n". $conn -> error);
     }
     return $conn;
-
-
-
-
 ?>
