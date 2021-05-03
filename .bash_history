@@ -43,3 +43,64 @@ git status
 git commit -m "pagina de admin con reportes + texto navbar"
 git push
 git pull
+git add
+git status
+git add -a
+git status
+git add .
+git status
+git commit -m "Pagina de admin mas completa"
+git push
+git satus
+git status
+oil refine install
+git remote add origin https://github.com/JosuRivas/InvestigacionCakePHP.git
+git remote add origin https://github.com/JosuRivas/InvestigacionCakePHP
+git remote add origin https://github.com/JosuRivas/InvestigacionCakePHP.git
+git clone https://github.com/JosuRivas/InvestigacionCakePHP
+git remote -v
+git remote add origin https://github.com/JosuRivas/InvestigacionCakePHP.git
+git remote add origin https://github.com/JosuRivas/InvestigacionCakePHP
+git status
+git init
+git add -a
+git status
+git add 
+git add .
+git status
+git remote add origin https://github.com/JosuRivas/InvestigacionCakePHP.git
+git commit 
+git status
+git commit -a
+git commit -m "Add y Browse con cakePHP"
+git push
+git push --set-upstream origin maste
+git push --set-upstream origin master
+git status
+git status
+git add ProductoController.php
+git add src/Controller/ProductoController.php
+git add templates/Producto/index.php
+git add templates/Producto/actualizar.php
+git status
+git commit -m editar, y eliminar agregados
+git commit -m 'editar, y eliminar agregados'
+git push
+git status
+git status
+git add 
+git add .
+git status
+git commit -m pagina de usuario para revisar sus vuelos
+git commit -a
+git status
+git commit -a -m pagina de user para revisar sus vuelos
+git commit -m pagina de user para revisar sus vuelos
+git commit -m pagina de user para revisar sus vuelos
+git commit -m 
+git commit 
+git add .
+git status
+git add .bash_history
+git status
+git commit .

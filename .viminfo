@@ -10,11 +10,20 @@
 
 # hlsearch on (H) or off (h):
 ~h
+# Last Search Pattern:
+~Msle0~/\.
+
 # Command Line History (newest to oldest):
 :q!
 |2,0,1616101550,,"q!"
 
 # Search String History (newest to oldest):
+? \.
+|2,1,1619643509,,"\\."
+? \<Lines\>
+|2,1,1619643497,,"\\<Lines\\>"
+? #
+|2,1,1619643489,,"#"
 
 # Expression History (newest to oldest):
 
@@ -23,21 +32,168 @@
 # Debug Line History (newest to oldest):
 
 # Registers:
+""1	LINE	0
+	#
+	# On branch master
+	#
+	# Initial commit
+	#
+	# Changes to be committed:
+	#	new file:   .editorconfig
+	#	new file:   .gitattributes
+	#	new file:   .github/ISSUE_TEMPLATE.md
+	#	new file:   .github/PULL_REQUEST_TEMPLATE.md
+	#	new file:   .github/workflows/ci.yml
+	#	new file:   .github/workflows/stale.yml
+	#	new file:   .gitignore
+	#	new file:   .htaccess
+	#	new file:   README.md
+	#	new file:   bin/cake
+	#	new file:   bin/cake.bat
+	#	new file:   bin/cake.php
+	#	new file:   composer.json
+	#	new file:   composer.lock
+	#	new file:   config/.env.example
+	#	new file:   config/app.php
+	#	new file:   config/app_local.example.php
+	#	new file:   config/bootstrap.php
+	#	new file:   config/bootstrap_cli.php
+	#	new file:   config/paths.php
+	#	new file:   config/requirements.php
+	#	new file:   config/routes.php
+	#	new file:   config/schema/i18n.sql
+	#	new file:   config/schema/sessions.sql
+	#	new file:   index.php
+	#	new file:   phpcs.xml
+	#	new file:   phpstan.neon
+	#	new file:   phpunit.xml.dist
+	#	new file:   plugins/.gitkeep
+	#	new file:   resources/.gitkeep
+	#	new file:   src/Application.php
+	#	new file:   src/Command/ConsoleCommand.php
+	#	new file:   src/Console/Installer.php
+	#	new file:   src/Controller/AppController.php
+	#	new file:   src/Controller/Component/.gitkeep
+	#	new file:   src/Controller/ErrorController.php
+	#	new file:   src/Controller/PagesController.php
+	#	new file:   src/Controller/ProductoController.php
+	#	new file:   src/Model/Behavior/.gitkeep
+	#	new file:   src/Model/Entity/.gitkeep
+	#	new file:   src/Model/Entity/Producto.php
+	#	new file:   src/Model/Table/.gitkeep
+	#	new file:   src/Model/Table/ProductoTable.php
+	#	new file:   src/View/AjaxView.php
+|3,1,1,1,50,0,1619643491,"#","# On branch master","#","# Initial commit","#","# Changes to be committed:","#	new file:   .editorconfig","#	new file:   .gitattributes","#	new file:   .github/ISSUE_TEMPLATE.md","#	new file:   .github/PULL_REQUEST_TEMPLATE.md","#	new file:   .github/workflows/ci.yml","#	new file:   .github/workflows/stale.yml","#	new file:   .gitignore","#	new file:   .htaccess","#	new file:   README.md","#	new file:   bin/cake",>28
+|<"#	new file:   bin/cake.bat","#	new file:   bin/cake.php","#	new file:   composer.json","#	new file:   composer.lock","#	new file:   config/.env.example","#	new file:   config/app.php","#	new file:   config/app_local.example.php","#	new file:   config/bootstrap.php","#	new file:   config/bootstrap_cli.php","#	new file:   config/paths.php","#	new file:   config/requirements.php","#	new file:   config/routes.php","#	new file:   config/schema/i18n.sql",>42
+|<"#	new file:   config/schema/sessions.sql","#	new file:   index.php","#	new file:   phpcs.xml","#	new file:   phpstan.neon","#	new file:   phpunit.xml.dist","#	new file:   plugins/.gitkeep","#	new file:   resources/.gitkeep","#	new file:   src/Application.php","#	new file:   src/Command/ConsoleCommand.php","#	new file:   src/Console/Installer.php","#	new file:   src/Controller/AppController.php","#	new file:   src/Controller/Component/.gitkeep",>50
+|<"#	new file:   src/Controller/ErrorController.php","#	new file:   src/Controller/PagesController.php","#	new file:   src/Controller/ProductoController.php","#	new file:   src/Model/Behavior/.gitkeep","#	new file:   src/Model/Entity/.gitkeep","#	new file:   src/Model/Entity/Producto.php","#	new file:   src/Model/Table/.gitkeep","#	new file:   src/Model/Table/ProductoTable.php","#	new file:   src/View/AjaxView.php"
 
 # File marks:
-'0  1  47  ~/.git/COMMIT_EDITMSG
-|4,48,1,47,1616101550,"~/.git/COMMIT_EDITMSG"
+'0  1  0  ~/.git/COMMIT_EDITMSG
+|4,48,1,0,1620057934,"~/.git/COMMIT_EDITMSG"
+'1  1  0  ~/.git/COMMIT_EDITMSG
+|4,49,1,0,1620057545,"~/.git/COMMIT_EDITMSG"
+'2  1  0  /d/xampp/htdocs/crud/.git/COMMIT_EDITMSG
+|4,50,1,0,1619643536,"/d/xampp/htdocs/crud/.git/COMMIT_EDITMSG"
+'3  2  50  /d/xampp/htdocs/crud/.git/COMMIT_EDITMSG
+|4,51,2,50,1619643513,"/d/xampp/htdocs/crud/.git/COMMIT_EDITMSG"
+'4  2  50  /d/xampp/htdocs/crud/.git/COMMIT_EDITMSG
+|4,52,2,50,1619643513,"/d/xampp/htdocs/crud/.git/COMMIT_EDITMSG"
+'5  1  47  ~/.git/COMMIT_EDITMSG
+|4,53,1,47,1616101550,"~/.git/COMMIT_EDITMSG"
+'6  1  47  ~/.git/COMMIT_EDITMSG
+|4,54,1,47,1616101550,"~/.git/COMMIT_EDITMSG"
 
 # Jumplist (newest first):
+-'  1  0  ~/.git/COMMIT_EDITMSG
+|4,39,1,0,1620057934,"~/.git/COMMIT_EDITMSG"
+-'  1  0  ~/.git/COMMIT_EDITMSG
+|4,39,1,0,1620057545,"~/.git/COMMIT_EDITMSG"
+-'  1  0  /d/xampp/htdocs/crud/.git/COMMIT_EDITMSG
+|4,39,1,0,1619643536,"/d/xampp/htdocs/crud/.git/COMMIT_EDITMSG"
+-'  1  0  /d/xampp/htdocs/crud/.git/COMMIT_EDITMSG
+|4,39,1,0,1619643536,"/d/xampp/htdocs/crud/.git/COMMIT_EDITMSG"
+-'  1  0  /d/xampp/htdocs/crud/.git/COMMIT_EDITMSG
+|4,39,1,0,1619643536,"/d/xampp/htdocs/crud/.git/COMMIT_EDITMSG"
+-'  1  0  /d/xampp/htdocs/crud/.git/COMMIT_EDITMSG
+|4,39,1,0,1619643536,"/d/xampp/htdocs/crud/.git/COMMIT_EDITMSG"
+-'  2  50  /d/xampp/htdocs/crud/.git/COMMIT_EDITMSG
+|4,39,2,50,1619643513,"/d/xampp/htdocs/crud/.git/COMMIT_EDITMSG"
+-'  2  50  /d/xampp/htdocs/crud/.git/COMMIT_EDITMSG
+|4,39,2,50,1619643513,"/d/xampp/htdocs/crud/.git/COMMIT_EDITMSG"
+-'  2  50  /d/xampp/htdocs/crud/.git/COMMIT_EDITMSG
+|4,39,2,50,1619643513,"/d/xampp/htdocs/crud/.git/COMMIT_EDITMSG"
+-'  2  50  /d/xampp/htdocs/crud/.git/COMMIT_EDITMSG
+|4,39,2,50,1619643513,"/d/xampp/htdocs/crud/.git/COMMIT_EDITMSG"
+-'  2  50  /d/xampp/htdocs/crud/.git/COMMIT_EDITMSG
+|4,39,2,50,1619643513,"/d/xampp/htdocs/crud/.git/COMMIT_EDITMSG"
+-'  2  50  /d/xampp/htdocs/crud/.git/COMMIT_EDITMSG
+|4,39,2,50,1619643513,"/d/xampp/htdocs/crud/.git/COMMIT_EDITMSG"
+-'  2  50  /d/xampp/htdocs/crud/.git/COMMIT_EDITMSG
+|4,39,2,50,1619643513,"/d/xampp/htdocs/crud/.git/COMMIT_EDITMSG"
+-'  2  50  /d/xampp/htdocs/crud/.git/COMMIT_EDITMSG
+|4,39,2,50,1619643513,"/d/xampp/htdocs/crud/.git/COMMIT_EDITMSG"
+-'  3  66  /d/xampp/htdocs/crud/.git/COMMIT_EDITMSG
+|4,39,3,66,1619643509,"/d/xampp/htdocs/crud/.git/COMMIT_EDITMSG"
+-'  3  66  /d/xampp/htdocs/crud/.git/COMMIT_EDITMSG
+|4,39,3,66,1619643509,"/d/xampp/htdocs/crud/.git/COMMIT_EDITMSG"
+-'  3  66  /d/xampp/htdocs/crud/.git/COMMIT_EDITMSG
+|4,39,3,66,1619643509,"/d/xampp/htdocs/crud/.git/COMMIT_EDITMSG"
+-'  3  66  /d/xampp/htdocs/crud/.git/COMMIT_EDITMSG
+|4,39,3,66,1619643509,"/d/xampp/htdocs/crud/.git/COMMIT_EDITMSG"
+-'  3  66  /d/xampp/htdocs/crud/.git/COMMIT_EDITMSG
+|4,39,3,66,1619643509,"/d/xampp/htdocs/crud/.git/COMMIT_EDITMSG"
+-'  3  66  /d/xampp/htdocs/crud/.git/COMMIT_EDITMSG
+|4,39,3,66,1619643509,"/d/xampp/htdocs/crud/.git/COMMIT_EDITMSG"
+-'  3  66  /d/xampp/htdocs/crud/.git/COMMIT_EDITMSG
+|4,39,3,66,1619643509,"/d/xampp/htdocs/crud/.git/COMMIT_EDITMSG"
+-'  3  66  /d/xampp/htdocs/crud/.git/COMMIT_EDITMSG
+|4,39,3,66,1619643509,"/d/xampp/htdocs/crud/.git/COMMIT_EDITMSG"
+-'  4  0  /d/xampp/htdocs/crud/.git/COMMIT_EDITMSG
+|4,39,4,0,1619643491,"/d/xampp/htdocs/crud/.git/COMMIT_EDITMSG"
+-'  4  0  /d/xampp/htdocs/crud/.git/COMMIT_EDITMSG
+|4,39,4,0,1619643491,"/d/xampp/htdocs/crud/.git/COMMIT_EDITMSG"
+-'  4  0  /d/xampp/htdocs/crud/.git/COMMIT_EDITMSG
+|4,39,4,0,1619643491,"/d/xampp/htdocs/crud/.git/COMMIT_EDITMSG"
+-'  4  0  /d/xampp/htdocs/crud/.git/COMMIT_EDITMSG
+|4,39,4,0,1619643491,"/d/xampp/htdocs/crud/.git/COMMIT_EDITMSG"
+-'  4  0  /d/xampp/htdocs/crud/.git/COMMIT_EDITMSG
+|4,39,4,0,1619643491,"/d/xampp/htdocs/crud/.git/COMMIT_EDITMSG"
+-'  4  0  /d/xampp/htdocs/crud/.git/COMMIT_EDITMSG
+|4,39,4,0,1619643491,"/d/xampp/htdocs/crud/.git/COMMIT_EDITMSG"
+-'  4  0  /d/xampp/htdocs/crud/.git/COMMIT_EDITMSG
+|4,39,4,0,1619643491,"/d/xampp/htdocs/crud/.git/COMMIT_EDITMSG"
+-'  4  0  /d/xampp/htdocs/crud/.git/COMMIT_EDITMSG
+|4,39,4,0,1619643491,"/d/xampp/htdocs/crud/.git/COMMIT_EDITMSG"
+-'  1  0  /d/xampp/htdocs/crud/.git/COMMIT_EDITMSG
+|4,39,1,0,1619643476,"/d/xampp/htdocs/crud/.git/COMMIT_EDITMSG"
+-'  1  0  /d/xampp/htdocs/crud/.git/COMMIT_EDITMSG
+|4,39,1,0,1619643476,"/d/xampp/htdocs/crud/.git/COMMIT_EDITMSG"
+-'  1  0  /d/xampp/htdocs/crud/.git/COMMIT_EDITMSG
+|4,39,1,0,1619643476,"/d/xampp/htdocs/crud/.git/COMMIT_EDITMSG"
+-'  1  0  /d/xampp/htdocs/crud/.git/COMMIT_EDITMSG
+|4,39,1,0,1619643476,"/d/xampp/htdocs/crud/.git/COMMIT_EDITMSG"
+-'  1  47  ~/.git/COMMIT_EDITMSG
+|4,39,1,47,1616101550,"~/.git/COMMIT_EDITMSG"
+-'  1  47  ~/.git/COMMIT_EDITMSG
+|4,39,1,47,1616101550,"~/.git/COMMIT_EDITMSG"
+-'  1  47  ~/.git/COMMIT_EDITMSG
+|4,39,1,47,1616101550,"~/.git/COMMIT_EDITMSG"
 -'  1  47  ~/.git/COMMIT_EDITMSG
 |4,39,1,47,1616101550,"~/.git/COMMIT_EDITMSG"
 
 # History of marks within files (newest to oldest):
 
 > ~/.git/COMMIT_EDITMSG
-	*	1616101544	0
-	"	1	47
+	*	1620057931	0
+	"	1	0
 	^	1	48
 	.	2	0
 	+	16	1
 	+	2	0
+
+> /d/xampp/htdocs/crud/.git/COMMIT_EDITMSG
+	*	1619643509	0
+	"	2	50
+	.	4	0
+	+	4	0
