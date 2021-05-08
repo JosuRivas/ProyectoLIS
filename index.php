@@ -158,14 +158,24 @@
                                                                     <div class="row">
                                                                         <div class="col-lg-4 col-md-4 col-sm-12">
                                                                             <div class="single-tab-select-box">
-
                                                                                 <h2>Lugar de partida</h2>
-
                                                                                 <div class="travel-select-icon">
                                                                                     <select class="form-control " name="lugar_partida">
-                                                                                        <option value="default">Ingresa el aeropuerto de partida</option><!-- /.option-->
-                                                                                        <option value="LAX Los Angeles International">LAX Los Angeles International</option><!-- /.option-->
-                                                                                        <option value="SAL Comalapa Internacional">SAL Comalapa Internacional</option><!-- /.option-->
+																					<option value="default">Ingresa el aeropuerto de partida</option><!-- /.option-->
+																					<?php
+																						include_once("Modulos/conexion_db.php");
+																						$sql = "SELECT DISTINCT Origen FROM vuelo";
+																						$result = mysqli_query($conn,$sql);
+																						if (mysqli_num_rows($result)>0) {
+																							while ($row = mysqli_fetch_assoc($result)) {
+																								$destino = $row['Origen'];
+																								echo "<option value=\"$destino\">$destino</option>";
+																							}
+																						}
+																						else {
+																							echo "<option>No se encontraron vuelos</option>";
+																						}
+																					?>
                                                                                     </select><!-- /.select-->
                                                                                 </div><!-- /.travel-select-icon -->
                                                                             </div><!--/.single-tab-select-box-->
@@ -174,10 +184,8 @@
                                                                         <div class="col-lg-2 col-md-3 col-sm-4">
                                                                             <div class="single-tab-select-box">
                                                                                 <h2>Partida</h2>
-                                                                                <div class="travel-check-icon">
-                                                                                    
+                                                                                <div class="travel-check-icon">                                                                                
                                                                                         <input type="date" name="fecha_ida" class="form-control">
-                                                                                    
                                                                                 </div><!-- /.travel-check-icon -->
                                                                             </div><!--/.single-tab-select-box-->
                                                                         </div><!--/.col-->
@@ -224,15 +232,22 @@
                                                                                     <select class="form-control " name="lugar_destino">
 
                                                                                         <option value="default">Ingresa el lugar de destino</option><!-- /.option-->
-
-                                                                                        <option value="SAL Comalapa Internacional">SAL Comalapa Internacional</option><!-- /.option-->
-                                                                                        <option value="LAX Los Angeles International">LAX Los Angeles International</option><!-- /.option-->
-                                                                                        <option value="BSB Presidente Juscelino Kubitschek Internacional">BSB Presidente Juscelino Kubitschek Internacional</option><!-- /.option-->
-                                                                                        <option value="JFK John F Kennedy International">JFK John F Kennedy International</option><!-- /.option-->
-
+																						<?php
+																							include_once("Modulos/conexion_db.php");
+																							$sql = "SELECT DISTINCT Destino FROM vuelo";
+																							$result = mysqli_query($conn,$sql);
+																							if (mysqli_num_rows($result)>0) {
+																								while ($row = mysqli_fetch_assoc($result)) {
+																									$destino = $row['Destino'];
+																									echo "<option value=\"$destino\">$destino</option>";
+																								}
+																							}
+																							else {
+																								echo "<option>No se encontraron vuelos</option>";
+																							}
+																						?>
                                                                                     </select><!-- /.select-->
                                                                                 </div><!-- /.travel-select-icon -->
-
                                                                             </div><!--/.single-tab-select-box-->
                                                                         </div><!--/.col-->
                                                                         <div class="col-lg-3 col-md-3 col-sm-4">
@@ -248,8 +263,8 @@
                                                                                     </select><!-- /.select-->
                                                                                 </div><!-- /.travel-select-icon -->
                                                                             </div><!--/.single-tab-select-box-->
-                                                                            </div><!--/.col-->
-                                                                            <div class="clo-sm-5">
+                                                                        </div><!--/.col-->
+                                                                            <div class="col-sm-5">
                                                                                 <div class="about-btn pull-right">
                                                                                     <input type="submit" class="about-view travel-btn" id="bt-buscar" name="bt-buscar" value="Buscar"><!--/.travel-btn-->                                                                         
                                                                                 </div><!--/.about-btn-->

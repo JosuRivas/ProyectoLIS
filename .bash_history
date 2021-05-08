@@ -104,3 +104,8 @@ git status
 git add .bash_history
 git status
 git commit .
+git status
+git add .
+git commit -m "pagina de user para ver sus vuelos"
+git push
+git status
