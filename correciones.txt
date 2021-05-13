@@ -1,3 +1,0 @@
--Ingreso de nuevos vuelos y aeropuertos desde la pagina web
--Imprimir ticket para el usuario con un numero de reserva con todo mas detallado
--Mas opciones al ingresar un vuelo +/- 3 dias, 

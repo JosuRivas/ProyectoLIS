@@ -109,3 +109,8 @@ git add .
 git commit -m "pagina de user para ver sus vuelos"
 git push
 git status
+git status
+git add .
+git status
+git commit -m "Pagina de reserva mejorada"
+git push

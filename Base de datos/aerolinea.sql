@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 13, 2021 at 04:03 PM
+-- Generation Time: May 13, 2021 at 02:42 AM
 -- Server version: 10.4.17-MariaDB
 -- PHP Version: 8.0.1
 
@@ -20,6 +20,8 @@ SET time_zone = "+00:00";
 --
 -- Database: `aerolinea`
 --
+CREATE DATABASE IF NOT EXISTS `aerolinea` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
+USE `aerolinea`;
 
 -- --------------------------------------------------------
 
@@ -73,7 +75,8 @@ CREATE TABLE `pasaje` (
   `Id_vuelo` int(11) NOT NULL,
   `Clase` varchar(5) NOT NULL,
   `Asiento` varchar(10) NOT NULL,
-  `Monto` double NOT NULL
+  `Monto` double NOT NULL,
+  `Pasaporte` varchar(12) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
@@ -131,19 +134,15 @@ ALTER TABLE `cliente`
 ALTER TABLE `pago`
   ADD PRIMARY KEY (`Id_Pago`),
   ADD UNIQUE KEY `comprobante_unique` (`Numero_Comprobante`),
-  ADD UNIQUE KEY `Id_Pasaje` (`Id_Pasaje`),
-  ADD UNIQUE KEY `Id_Pasaje_2` (`Id_Pasaje`),
-  ADD UNIQUE KEY `Id_Pasaje_3` (`Id_Pasaje`),
-  ADD UNIQUE KEY `Id_Pasaje_4` (`Id_Pasaje`);
+  ADD KEY `Id_Pasaje` (`Id_Pasaje`) USING BTREE;
 
 --
 -- Indexes for table `pasaje`
 --
 ALTER TABLE `pasaje`
   ADD PRIMARY KEY (`Id_Pasaje`),
-  ADD UNIQUE KEY `asiento_unique` (`Asiento`),
-  ADD UNIQUE KEY `Id_Cliente` (`Id_Cliente`),
-  ADD UNIQUE KEY `Id_vuelo` (`Id_vuelo`);
+  ADD KEY `Id_Cliente` (`Id_Cliente`) USING BTREE,
+  ADD KEY `Id_vuelo` (`Id_vuelo`) USING BTREE;
 
 --
 -- Indexes for table `usuario`
@@ -156,7 +155,7 @@ ALTER TABLE `usuario`
 --
 ALTER TABLE `vuelo`
   ADD PRIMARY KEY (`Id_Vuelo`),
-  ADD UNIQUE KEY `Id_Aerolinea` (`Id_Aerolinea`);
+  ADD KEY `Id_Aerolinea` (`Id_Aerolinea`) USING BTREE;
 
 --
 -- AUTO_INCREMENT for dumped tables

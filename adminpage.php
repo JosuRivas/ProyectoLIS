@@ -212,14 +212,14 @@
                                     echo '</tr>';
                                 echo '</thead>';
                                 echo ' <tbody>';
-								while ($row = mysqli_fetch_row($result)) {
+								while ($row = mysqli_fetch_assoc($result)) {
 									echo '<tr>';
-									echo '<td>' . $row[0].'</td>';
-									echo '<td>' . $row[1].'</td>';
-									echo '<td>' . $row[2].'</td>';
-									echo '<td>' . $row[3].'</td>';
-									echo '<td>' . $row[4].'</td>';
-									echo '<td>' . $row[5].'</td>';
+									echo '<td>' . $row['Numero_Comprobante'].'</td>';
+									echo '<td>' . $row['Fecha'].'</td>';
+									echo '<td>' . $row['Numero_Vuelo'].'</td>';
+									echo '<td>' . $row['Nombre'].'</td>';
+									echo '<td>' . $row['Asiento'].'</td>';
+									echo '<td>' . $row['Monto'].'</td>';
 									echo '</tr>';
 							}
 							echo '</tbody>';
@@ -228,7 +228,9 @@
 						else {
 							alerta("No se encontro ningun ticket reciente");
 						}
+						mysqli_close($conn);
 					}
+					
 				?>
 			</div><!--/.container-->
 			
@@ -255,7 +257,19 @@
                         <div class="row">
                             <div class="col-sm-3">
                                 <h3>Nombre aerolinea:</h3>
-                                <input type="text" name="NombreA" class="form-control" id="NombreA">
+                                <select name="NombreA" id="NombreA" class="form-control">
+								<?php
+									include "Modulos/conexion_db.php";
+									$sql = "SELECT Nombre FROM Aerolinea";
+									$result = mysqli_query($conn,$sql);
+									if (mysqli_num_rows($result)>0) {
+										while ($row = mysqli_fetch_assoc($result)) {
+											$nombre = $row['Nombre'];
+											echo "<option value=\"$nombre\">$nombre</option>";
+										}
+									}
+								?>
+								</select>
                             </div>
                             <div class="col-sm-3">
                                 <h3>Capacidad del vuelo:</h3>

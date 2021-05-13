@@ -38,26 +38,6 @@ var bt = $("#bt-buscar");
            }
          });    
 });
-var bt1 = $("#limpiar");
-    bt1.click(function(e) {
-
-    e.preventDefault(); 
-
-    var form = $(this);
-    var url = form.attr('action');
-    
-    $.ajax({
-           type: "POST",
-           url: url,
-           data:{
-           },
-           success: function(data)
-           {
-               form.trigger("reset");
-                location.reload();
-           }
-         });    
-});
 document.getElementById("cboxh").addEventListener("click",function(){
     if (document.getElementById("cboxh").checked == true) {
         document.getElementById("Nhora").readOnly = false

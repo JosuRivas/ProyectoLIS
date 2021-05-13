@@ -344,7 +344,41 @@
                             if(mysqli_num_rows($resultado) > 0){
                                 $row = mysqli_fetch_assoc($resultado);
                                 $id = $row['Id_Vuelo']; $salida = $row['Origen']; $llegada = $row['Destino']; $fecha = $row['Fecha_salida']; $hora = $row['Hora'];$vuelo = $row['Numero_Vuelo'];$_SESSION['vuelo'] = $vuelo;
-                            
+                                // tabla de pasaportes y maletas-----------------------------------------------------------------------------------
+                            echo '<div class="container" style="padding:0">';
+                            echo '<table  class="table table-striped table-bordered nowrap">';
+                            echo '<caption><h3 style="color:white">Llenar la información de los viajeros</h3></caption>';
+                            echo '<thead style="background-color:white">';
+                                echo '<tr>';
+                                    echo '<th>Tipo</th>';
+                                    echo '<th># Pasaporte</th>';
+                                    echo '<th># Maletas</th> ';  
+                                echo '</tr>';
+                                echo '</thead>';
+                                echo ' <tbody style="background-color:white">';
+                                    echo '<tr>';
+                                    for ($i=1; $i <= $_SESSION['num_viajeros'] ; $i++) {
+                                        if ($_SESSION['niños'] > 0) {
+                                            echo "<td>Niño</td>";
+                                            $_SESSION['niños'] -=1; 
+                                        }
+                                        elseif ($_SESSION['adultos'] > 0) {
+                                            echo "<td>Adulto</td>";
+                                            $_SESSION['adultos'] -=1; 
+                                        }
+                                        echo "<td><form action=\"/PROYECTO/Reserva.php\" name=\"frminsert\" method=\"POST\"><input type=\"text\" class=\"form-control\" maxlength=\"9\" name=\"pasaporte".$i."\"></td>";
+                                        echo "<td>";
+                                        echo "<select class=\"form-control\" name=\"maleta".$i."\">";
+                                        echo   "<option value=\"default\">Numero de maletas </option><!-- /.option-->
+                                                <option value=\"1M\">1 Maleta + Carry on (Sin costo adicional)</option><!-- /.option-->
+                                                <option value=\"2M\">2 Maletas + Carry on (+$100)</option><!-- /.option-->
+                                                <option value=\"3M\">3 Maletas + Carry on (+$200)</option><!-- /.option-->
+                                            </select></td>";
+                                        echo "</tr>";
+                                    }
+                                echo '</tbody>';
+                                echo '</table>';
+                                //tabla de confirmacion de vuelo
                                 echo '<div class="container" style="padding:0">';
                                 echo '<table  class="table table-striped table-bordered nowrap" style="background-color:white">';
                                 echo '<caption><h3 style="color:white">Confirmar informacion del vuelo</h3></caption>';
@@ -381,46 +415,12 @@
                     if (mysqli_num_rows($result) > 0) {
                         $row = mysqli_fetch_assoc($result);
                         $cap = $row['Capacidad'];
-                        if ($cap > 0) {
+                        if ($cap > $_SESSION['num_viajeros']) {
                             $sql = "SELECT Id_Vuelo, Origen, Destino, Fecha_salida, Hora, Numero_Vuelo FROM vuelo WHERE Destino = '$origen' AND Origen = '$destino' AND Fecha_salida = '$regreso'";
                             $result = mysqli_query($conn,$sql);
                             $row = mysqli_fetch_assoc($result);
                             $id = $row['Id_Vuelo']; $salida = $row['Origen']; $llegada = $row['Destino']; $fecha = $row['Fecha_salida']; $hora = $row['Hora'];$vuelo = $row['Numero_Vuelo'];$_SESSION['vuelo_r'] = $vuelo;
-                            // tabla de pasaportes y maletas-----------------------------------------------------------------------------------
-                            echo '<div class="container" style="padding:0">';
-                            echo '<table  class="table table-striped table-bordered nowrap">';
-                            echo '<caption><h3 style="color:white">Llenar la información de los viajeros</h3></caption>';
-                            echo '<thead style="background-color:white">';
-                                echo '<tr>';
-                                    echo '<th>Tipo</th>';
-                                    echo '<th># Pasaporte</th>';
-                                    echo '<th># Maletas</th> ';  
-                                echo '</tr>';
-                                echo '</thead>';
-                                echo ' <tbody style="background-color:white">';
-                                    echo '<tr>';
-                                    for ($i=1; $i <= $_SESSION['num_viajeros'] ; $i++) {
-                                        if ($_SESSION['niños'] > 0) {
-                                            echo "<td>Niño</td>";
-                                            $_SESSION['niños'] -=1; 
-                                        }
-                                        elseif ($_SESSION['adultos'] > 0) {
-                                            echo "<td>Adulto</td>";
-                                            $_SESSION['adultos'] -=1; 
-                                        }
-                                        echo "<td><input type=\"text\" class=\"form-control\" maxlength=\"9\" name=\"pasaporte".$i."\"></td>";
-                                        echo "<td>";
-                                        echo "<select class=\"form-control\" name=\"maleta".$i."\">";
-                                        echo   "<option value=\"default\">Numero de maletas </option><!-- /.option-->
-                                                <option value=\"1M\">1 Maleta + Carry on (Sin costo adicional)</option><!-- /.option-->
-                                                <option value=\"2M\">2 Maletas + Carry on (+$100)</option><!-- /.option-->
-                                                <option value=\"3M\">3 Maletas + Carry on (+$200)</option><!-- /.option-->
-                                            </select></td>";
-                                        echo "</tr>";
-                                    }
-                                echo '</tbody>';
-                                echo '</table>';
-                            // tabla de confirmacion de vuelo -----------------------------------------------------------------------------------------
+                            
                             echo '<tr style="background-color:white">';
                                 echo '<td>'.$vuelo.'</td>';
                                 echo '<td>'.$hora.' -> '.$fecha.' -> '.$salida.'</td>';
@@ -432,7 +432,7 @@
                             echo '<td></td>';
                             echo '<td>Total:</td>';
                             echo '<td>$'.$tarifa+$tarifa.'</td>';
-                            echo '<td><form action="/PROYECTO/Reserva.php" name="frminsert" method="POST"><input class="btn btn-success" name="bt-confirmar" type="submit" value="Confirmar"></input></form></td>';
+                            echo '<td><input class="btn btn-success" name="bt-confirmar" type="submit" value="Confirmar"></input></form></td>';
                             echo '</tr>';
                             echo '</tbody>';
                             echo '</table>';
@@ -533,9 +533,9 @@
             mysqli_close($conn);
         }
         include "Modulos/conexion_db.php";
-        //confirmacion de vuelo
+        //confirmacion de vuelo---------------------------------------------------------------------------------------------------------
         if (isset($_POST['bt-confirmar']) && isset($_POST['maleta1'])) {
-            for ($i=1; $i <=$_SESSION['num_viajeros']; $i++) { 
+            for ($i=1; $i <=$_SESSION['num_viajeros']; $i++) { //se calcula el cargo extra por maletas
                 $maleta = 'maleta'.(string)$i;
                 $m = $_POST[$maleta];
                 switch ($m) {
@@ -554,8 +554,8 @@
                 $pasaporte = "pasaporte".$i;
                 $passports[$i-1]= $_POST[$pasaporte];
             }
-            $asientos = array();
-            if (isset($_SESSION['username'])) {
+            $asientos = array(); 
+            if (isset($_SESSION['username'])) { // se busca el id del cliente actual que esta logeado
                 $success = 0;
             $id_cliente = "";
             $comprobante = 0;
@@ -571,7 +571,7 @@
                 echo "Debe crear un usuario para hacer reservas";
                 exit;
             }
-            $vuelo = $_SESSION['vuelo'];
+            $vuelo = $_SESSION['vuelo']; // se busca el id del vuelo de ida
             $sql = "SELECT Id_Vuelo FROM vuelo WHERE Numero_Vuelo = '$vuelo'";
             $result = mysqli_query($conn,$sql);
             if (mysqli_num_rows($result) > 0) {
@@ -579,12 +579,12 @@
                 $id_vuelo =  $row['Id_Vuelo'];
                 
             }
-            $j = 0;
-            for ($i=0; $i < $_SESSION['num_viajeros']; $i++) { 
+            for ($i=0; $i < $_SESSION['num_viajeros']; $i++) {  //se asignan asientos a los viajeros
                     $asientos[$i] = randomSeat($_SESSION['clase']);$seat = $asientos[$i];
             }
             $clase = $_SESSION['clase'];
-            for ($i=0; $i < $_SESSION['num_viajeros']; $i++) {
+
+            for ($i=0; $i < $_SESSION['num_viajeros']; $i++) { // se insertan en la tabla los pasajes de ida de los viajeros
                 $asiento = $asientos[$i];
                 $tarifa = $_SESSION['sub'][$i];
                 $passport = $passports[$i];
@@ -597,28 +597,30 @@
             }
             }
             $tarifa = $_SESSION['tarifa'];
-            $sql = "SELECT Id_Pasaje FROM pasaje WHERE Id_Cliente = '$id_cliente' AND Id_vuelo = '$id_vuelo'";
+            $sql = "SELECT MAX(Id_Pasaje) AS Id_Pasaje FROM pasaje"; // se busca el id de pasaje para asignarselo a la tabla de pago
             $result = mysqli_query($conn,$sql);
             if (mysqli_num_rows($result) > 0) {
                 $row = mysqli_fetch_assoc($result);
                 $id_pasaje =  $row['Id_Pasaje'];
                 
             }
-            else{
-            }
-            $sql = "SELECT * FROM pago";
-            $result = mysqli_query($conn,$sql);
-            $comprobante = (int)mysqli_num_rows($result) + 1 ;
-            $date = date("Y-m-d");
-            $sql = "INSERT INTO pago(Monto,Numero_Comprobante,Id_Pasaje,Fecha) VALUES($tarifa,$comprobante,$id_pasaje,'$date')";
-            if (mysqli_query($conn,$sql)) {
-                $success += 1;
-
-            }
-            else{
+            for ($i=0; $i < $_SESSION['num_viajeros']; $i++) { 
+                $sql = "SELECT MAX(Numero_Comprobante) AS Numero_Comprobante FROM pago"; //se busca el comprobante de pago anterior y se aumenta en 1
+                $result = mysqli_query($conn,$sql); 
+                $row = mysqli_fetch_assoc($result);
+                $comprobante = $row['Numero_Comprobante'] + 1;
+                $date = date("Y-m-d");
+                $tarifa = $_SESSION['sub'][$i];
+                $sql = "INSERT INTO pago(Monto,Numero_Comprobante,Id_Pasaje,Fecha) VALUES($tarifa,$comprobante,$id_pasaje,'$date')"; // se inserta el pago realizado en la base
+                if (mysqli_query($conn,$sql)) {
+                    $success += 1;
+                }
+                else{
                 echo "error" . $sql . "<br>" . mysqli_error($conn);
+                }
             }
-            $sql = "SELECT Capacidad FROM vuelo WHERE Numero_Vuelo = '$vuelo'";
+            
+            $sql = "SELECT Capacidad FROM vuelo WHERE Numero_Vuelo = '$vuelo'"; // se reduce en n viajeros la cantidad de asientos del vuelo
             $result = mysqli_query($conn,$sql);
             if (mysqli_num_rows($result) > 0) {
                 $row = mysqli_fetch_assoc($result);
@@ -633,7 +635,7 @@
                 }
             }
             // si hay vuelo de ida y regreso
-            if ($_SESSION['regreso'] == true) {
+            if ($_SESSION['regreso'] == true) { // se busca el id del vuelo de regreso
                 $vuelo = $_SESSION['vuelo_r'];
                 $sql = "SELECT Id_Vuelo FROM vuelo WHERE Numero_Vuelo = '$vuelo'";
                 $result = mysqli_query($conn,$sql);
@@ -642,45 +644,44 @@
                     $id_vuelo =  $row['Id_Vuelo'];
 
                 }
-                $i = 0;
-                while ($i < 222) {
-                    $seat = randomSeat($_SESSION['clase']);
-                    $sql = "SELECT * FROM pasaje WHERE Asiento = '$seat'";
-                    $result = mysqli_query($conn,$sql);
-                    if (mysqli_num_rows($result) == 0) {
-                        break;
-                    }
-                    else{
-                        $i++;
-                    } 
-                }
-                $clase = $_SESSION['clase'];$tarifa = $_SESSION['tarifa'];
-                $sql = "INSERT INTO pasaje(Id_Cliente,Id_vuelo,Clase,Asiento,Monto) VALUES($id_cliente,'$id_vuelo','$clase','$seat',$tarifa)";
+                $asientos = array();
+                for ($i=0; $i < $_SESSION['num_viajeros']; $i++) {  //se asignan asientos a los viajeros
+                    $asientos[$i] = randomSeat($_SESSION['clase']);$seat = $asientos[$i];
+                }   
+                $clase = $_SESSION['clase'];
+                for ($i=0; $i < $_SESSION['num_viajeros']; $i++) { // se insertan en la tabla los pasajes de regreso de los viajeros
+                    $asiento = $asientos[$i];
+                    $tarifa = $_SESSION['sub'][$i];
+                    $passport = $passports[$i];
+                    $sql = "INSERT INTO pasaje(Id_Cliente,Id_vuelo,Clase,Asiento,Monto,Pasaporte) VALUES($id_cliente,'$id_vuelo','$clase','$asiento',$tarifa,'$passport')";
                 if (mysqli_query($conn,$sql)) {
                     $success += 1;
                 }
                 else {
                     echo "error" . $sql . "<br>" . mysqli_error($conn);
                 }
-
-                $sql = "SELECT MAX(Id_Pasaje) FROM pasaje WHERE Id_Cliente = '$id_cliente' AND Id_vuelo = '$id_vuelo'";
+                }
+                $tarifa = $_SESSION['tarifa'];
+                $sql = "SELECT MAX(Id_Pasaje) AS Id_Pasaje FROM pasaje"; // se busca el id de pasaje para asignarselo a la tabla de pago
                 $result = mysqli_query($conn,$sql);
                 if (mysqli_num_rows($result) > 0) {
                     $row = mysqli_fetch_assoc($result);
                     $id_pasaje =  $row['Id_Pasaje'];
                 }
-                else{
-                }
-                $sql = "SELECT * FROM pago";
-                $result = mysqli_query($conn,$sql);
-                $comprobante = (int)mysqli_num_rows($result) + 1 ;
-                $date = date("Y-m-d");
-                $sql = "INSERT INTO pago(Monto,Numero_Comprobante,Id_Pasaje,Fecha) VALUES($tarifa,$comprobante,$id_pasaje,'$date')"; //el id_pasaje no se ingresa bien
-                if (mysqli_query($conn,$sql)) {
-                    $success += 1;
-                }
-                else{
+                for ($i=0; $i < $_SESSION['num_viajeros']; $i++) { 
+                    $sql = "SELECT MAX(Numero_Comprobante) AS Numero_Comprobante FROM pago"; //se busca el comprobante de pago anterior y se aumenta en 1
+                    $result = mysqli_query($conn,$sql); 
+                    $row = mysqli_fetch_assoc($result);
+                    $comprobante = $row['Numero_Comprobante'] + 1;
+                    $date = date("Y-m-d");
+                    $tarifa = $_SESSION['sub'][$i];
+                    $sql = "INSERT INTO pago(Monto,Numero_Comprobante,Id_Pasaje,Fecha) VALUES($tarifa,$comprobante,$id_pasaje,'$date')"; // se inserta el pago realizado en la base
+                    if (mysqli_query($conn,$sql)) {
+                        $success += 1;
+                    }
+                    else{
                     echo "error" . $sql . "<br>" . mysqli_error($conn);
+                    }
                 }
                 $sql = "SELECT Capacidad FROM vuelo WHERE Numero_Vuelo = '$vuelo'";
                 $result = mysqli_query($conn,$sql);
@@ -688,7 +689,8 @@
                     $row = mysqli_fetch_assoc($result);
                     $cap =  $row['Capacidad'];
                     if ($cap > 0) {
-                        $sql = "UPDATE vuelo SET Capacidad = Capacidad - 1 WHERE Numero_Vuelo = '$vuelo'";
+                        $resto = $_SESSION['num_viajeros'];
+                        $sql = "UPDATE vuelo SET Capacidad = Capacidad - $resto WHERE Numero_Vuelo = '$vuelo'"; // se reduce en n viajeros la cantidad de asientos del vuelo
                         $result = mysqli_query($conn,$sql);
                     }
                     else {

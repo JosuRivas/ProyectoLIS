@@ -1,0 +1,1549 @@
+         app:INFO ------------------------------------------------
+         app:INFO             Sun May  9 10:04:12 2021            
+         app:INFO               Starting new session              
+         app:INFO ------------------------------------------------
+         app:INFO             OpenShot (version 2.5.1)            
+         app:INFO ------------------------------------------------
+         app:INFO openshot-qt version: 2.5.1
+         app:INFO libopenshot version: 0.2.5
+         app:INFO platform: Windows-10-10.0.19041
+         app:INFO processor: Intel64 Family 6 Model 158 Stepping 10, GenuineIntel
+         app:INFO machine: AMD64
+         app:INFO python version: 3.7.4
+         app:INFO qt5 version: 5.12.4
+         app:INFO pyqt5 version: 5.12.3
+    language:INFO Qt Detected Languages: ['es-MX', 'es-ES', 'en-US']
+    language:INFO LANG Environment Variable: 
+    language:INFO LOCALE Environment Variable: 
+    language:INFO OpenShot Preference Language: Default
+project_data:INFO Setting default profile to HD 720p 30 fps
+         app:INFO Setting font to D:\apps\OpenShot Video Editor\images\fonts\Ubuntu-R.ttf
+         app:INFO Setting custom dark theme
+logger_libopenshot:INFO Connecting to libopenshot with debug port: 5556
+     ui_util:INFO Initializing UI for MainWindow
+files_listview:INFO currentChanged
+files_listview:INFO updateSelection
+ files_model:INFO updating files model.
+transition_model:INFO updating transitions model.
+     version:INFO Found current version: {"openshot_version": "2.5.1"}
+effects_model:INFO updating effects model.
+ main_window:INFO foundCurrentVersion: Found the latest version: 2.5.1
+properties_model:INFO updating clip properties model.
+transition_model:INFO updating transitions model.
+ files_model:INFO updating files model.
+ main_window:INFO InitCacheSettings
+ main_window:INFO cache-mode: CacheMemory
+ main_window:INFO cache-limit-mb: 250
+ main_window:INFO Creating CacheMemory object with 262144000 byte limit
+preview_thread:INFO QThread Start Method Invoked
+preview_thread:INFO initPlayer
+ main_window:INFO Clear all thumbnails: D:\tareas\LIS\ProyectoLIS\.openshot_qt\thumbnail
+ main_window:INFO Clear all animations: D:\tareas\LIS\ProyectoLIS\.openshot_qt\blender
+ main_window:INFO Clear all titles: D:\tareas\LIS\ProyectoLIS\.openshot_qt\title
+ main_window:INFO updateStatusChanged
+ main_window:INFO updateStatusChanged
+         app:INFO Process command-line arguments: ['D:\\apps\\OpenShot Video Editor\\openshot-qt.exe']
+ main_window:INFO recover_backup
+project_data:INFO Setting default profile to HD 720p 30 fps
+preview_thread:INFO refreshFrame
+preview_thread:INFO self.player.Position(): 1
+video_widget:INFO Load: Set video widget display aspect ratio to: 1.7777777910232544
+video_widget:INFO Set video widget pixel aspect ratio to: 1.0
+ main_window:INFO updateStatusChanged
+preview_thread:INFO onModeChanged
+properties_model:INFO Update item: 
+properties_model:INFO updating clip properties model.
+    timeline:INFO Adjusting max size of preview image: PyQt5.QtCore.QSize(722, 406)
+preview_thread:INFO refreshFrame
+preview_thread:INFO self.player.Position(): 1
+preview_thread:INFO refreshFrame
+preview_thread:INFO self.player.Position(): 1
+timeline_webview:WARNING TimelineWebView::eval_js() called before document ready event. Script queued: $('body').scope().SetSnappingMode(1);
+timeline_webview:WARNING TimelineWebView::eval_js() called before document ready event. Script queued: $('body').scope().setScale(15, 0);
+timeline_webview:WARNING TimelineWebView::eval_js() called before document ready event. Script queued: $('body').scope().SetTrackLabel('Pista %s');
+timeline_webview:WARNING TimelineWebView::eval_js() called before document ready event. Script queued: $('body').scope().LoadJson({"type": "load", "key": "", "value": {"id": "626XL8QM6O", "fps": {"num": 30, "den": 1}, "display_ratio": {"num": 16, "den": 9}, "pixel_ratio": {"num": 1, "den": 1}, "width": 1280, "height": 720, "sample_rate": 44100, "channels": 2, "channel_layout": 3, "settings": {}, "clips": [], "effects": [], "export_path": "", "import_path": "", "files": [], "duration": 300, "scale": 15, "tick_pixels": 100, "playhead_position": 0, "profile": "HD 720p 30 fps", "layers": [{"id": "L1", "label": "", "number": 1000000, "y": 0, "lock": false}, {"id": "L2", "label": "", "number": 2000000, "y": 0, "lock": false}, {"id": "L3", "label": "", "number": 3000000, "y": 0, "lock": false}, {"id": "L4", "label": "", "number": 4000000, "y": 0, "lock": false}, {"id": "L5", "label": "", "number": 5000000, "y": 0, "lock": false}], "markers": [], "progress": [], "version": {"openshot-qt": "0.0.0", "libopenshot": "0.0.0"}}, "partial": false, "old_values": {}});
+timeline_webview:WARNING TimelineWebView::eval_js() called before document ready event. Script queued: $('body').scope().SetFollow(1);
+timeline_webview:WARNING TimelineWebView::eval_js() called before document ready event. Script queued: $('body').scope().MovePlayheadToFrame(1);
+timeline_webview:INFO Qt Found!
+timeline_webview:INFO $scope.Qt = true;
+timeline_webview:INFO SetThumbAddress: http://127.0.0.1:50803/thumbnails/
+timeline_webview:INFO SortItems
+timeline_webview:INFO UpdateLayerIndex
+timeline_webview:INFO UpdateLayerIndex
+    timeline:INFO Adjusting max size of preview image: PyQt5.QtCore.QSize(1284, 722)
+preview_thread:INFO refreshFrame
+preview_thread:INFO self.player.Position(): 1
+     metrics:INFO Track metric: [200] http://www.google-analytics.com/collect?cid=&v=1&tid=UA-4381101-5&an=OpenShot+Video+Editor&aip=1&aid=org.openshot.openshot-qt&av=2.5.1&ul=en-us&ua=Mozilla%2F5.0+%28Windows+NT+10%3B+10.0.19041%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F37.0.2062.120+Safari%2F537.36&cd1=0.2.5&cd2=3.7.4&cd3=5.12.4&cd4=5.12.3&cd5=Windows+10-10.0.19041--&t=screenview&sc=start&cd=launch-app | (35 bytes)
+     metrics:INFO Track metric: [200] http://www.google-analytics.com/collect?cid=52750eaa-98d8-4a52-af01-0bd864bb2903&v=1&tid=UA-4381101-5&an=OpenShot+Video+Editor&aip=1&aid=org.openshot.openshot-qt&av=2.5.1&ul=en-us&ua=Mozilla%2F5.0+%28Windows+NT+10%3B+10.0.19041%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F37.0.2062.120+Safari%2F537.36&cd1=0.2.5&cd2=3.7.4&cd3=5.12.4&cd4=5.12.3&cd5=Windows+10-10.0.19041--&t=screenview&cd=initial-launch-screen | (35 bytes)
+     metrics:INFO Track metric: [200] http://www.google-analytics.com/collect?cid=52750eaa-98d8-4a52-af01-0bd864bb2903&v=1&tid=UA-4381101-5&an=OpenShot+Video+Editor&aip=1&aid=org.openshot.openshot-qt&av=2.5.1&ul=en-us&ua=Mozilla%2F5.0+%28Windows+NT+10%3B+10.0.19041%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F37.0.2062.120+Safari%2F537.36&cd1=0.2.5&cd2=3.7.4&cd3=5.12.4&cd4=5.12.3&cd5=Windows+10-10.0.19041--&t=screenview&cd=main-screen | (35 bytes)
+     metrics:INFO Track metric: [200] http://www.google-analytics.com/collect?cid=52750eaa-98d8-4a52-af01-0bd864bb2903&v=1&tid=UA-4381101-5&an=OpenShot+Video+Editor&aip=1&aid=org.openshot.openshot-qt&av=2.5.1&ul=en-us&ua=Mozilla%2F5.0+%28Windows+NT+10%3B+10.0.19041%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F37.0.2062.120+Safari%2F537.36&cd1=0.2.5&cd2=3.7.4&cd3=5.12.4&cd4=5.12.3&cd5=Windows+10-10.0.19041--&t=screenview&cd=metrics-opt-in | (35 bytes)
+files_listview:INFO Processing drop event for PyQt5.QtCore.QUrl('file:///C:/Users/josu_/Desktop/VIDEO_FRAMEWORK.mp4')
+files_listview:INFO Adding file: C:/Users/josu_/Desktop/VIDEO_FRAMEWORK.mp4
+project_data:INFO _set key: ['files'] values: {'acodec': 'aac', 'audio_bit_rate': 128000, 'audio_stream_index': 0, 'audio_timebase': {'den': 32000, 'num': 1}, 'channel_layout': 3, 'channels': 2, 'display_ratio': {'den': 9, 'num': 16}, 'duration': 682.3679809570312, 'file_size': '28186726', 'fps': {'den': 682361, 'num': 16377000}, 'has_audio': True, 'has_single_image': False, 'has_video': True, 'height': 720, 'interlaced_frame': False, 'metadata': {'compatible_brands': 'isommp42', 'creation_time': '2021-05-06T23:09:13.000000Z', 'handler_name': 'ISO Media file produced by Google Inc. Created on: 05/06/2021.', 'language': 'und', 'major_brand': 'mp42', 'minor_version': '0'}, 'path': 'C:/Users/josu_/Desktop/VIDEO_FRAMEWORK.mp4', 'pixel_format': 0, 'pixel_ratio': {'den': 1, 'num': 1}, 'sample_rate': 32000, 'top_field_first': True, 'type': 'FFmpegReader', 'vcodec': 'h264', 'video_bit_rate': 41307, 'video_length': '16377', 'video_stream_index': 1, 'video_timebase': {'den': 1000, 'num': 1}, 'width': 1280, 'media_type': 'video', 'id': 'GYGVJ227I0'} add: True partial: False remove: False
+timeline_webview:INFO SortItems
+timeline_webview:INFO UpdateLayerIndex
+ files_model:INFO updating files model.
+ files_model:INFO updating files model.
+ main_window:INFO updateStatusChanged
+timeline_webview:INFO ShowTimelineMenu: position: 6.1499999999999995, layer: 5000000
+files_listview:INFO currentChanged
+files_listview:INFO updateSelection
+files_listview:INFO updateSelection
+ main_window:INFO actionAddTrack_trigger
+project_data:INFO _set key: ['layers'] values: {'number': 6000000, 'y': 0, 'label': '', 'lock': False, 'id': 'Y4RW6DPFBR'} add: True partial: False remove: False
+timeline_webview:INFO SortItems
+timeline_webview:INFO UpdateLayerIndex
+ main_window:INFO updateStatusChanged
+timeline_webview:INFO UpdateLayerIndex
+project_data:INFO _set key: ['clips'] values: {'alpha': {'Points': [{'co': {'X': 1.0, 'Y': 1.0}, 'interpolation': 2}]}, 'anchor': 0, 'channel_filter': {'Points': [{'co': {'X': 1.0, 'Y': -1.0}, 'interpolation': 2}]}, 'channel_mapping': {'Points': [{'co': {'X': 1.0, 'Y': -1.0}, 'interpolation': 2}]}, 'crop_height': {'Points': [{'co': {'X': 1.0, 'Y': 1.0}, 'interpolation': 2}]}, 'crop_width': {'Points': [{'co': {'X': 1.0, 'Y': 1.0}, 'interpolation': 2}]}, 'crop_x': {'Points': [{'co': {'X': 1.0, 'Y': 0.0}, 'interpolation': 2}]}, 'crop_y': {'Points': [{'co': {'X': 1.0, 'Y': 0.0}, 'interpolation': 2}]}, 'display': 0, 'duration': 682.3679809570312, 'effects': [], 'end': 682.3679809570312, 'gravity': 4, 'has_audio': {'Points': [{'co': {'X': 1.0, 'Y': -1.0}, 'interpolation': 2}]}, 'has_video': {'Points': [{'co': {'X': 1.0, 'Y': -1.0}, 'interpolation': 2}]}, 'id': 'NB9TYH7W7L', 'layer': 6000000, 'location_x': {'Points': [{'co': {'X': 1.0, 'Y': 0.0}, 'interpolation': 2}]}, 'location_y': {'Points': [{'co': {'X': 1.0, 'Y': 0.0}, 'interpolation': 2}]}, 'mixing': 0, 'perspective_c1_x': {'Points': [{'co': {'X': 1.0, 'Y': -1.0}, 'interpolation': 2}]}, 'perspective_c1_y': {'Points': [{'co': {'X': 1.0, 'Y': -1.0}, 'interpolation': 2}]}, 'perspective_c2_x': {'Points': [{'co': {'X': 1.0, 'Y': -1.0}, 'interpolation': 2}]}, 'perspective_c2_y': {'Points': [{'co': {'X': 1.0, 'Y': -1.0}, 'interpolation': 2}]}, 'perspective_c3_x': {'Points': [{'co': {'X': 1.0, 'Y': -1.0}, 'interpolation': 2}]}, 'perspective_c3_y': {'Points': [{'co': {'X': 1.0, 'Y': -1.0}, 'interpolation': 2}]}, 'perspective_c4_x': {'Points': [{'co': {'X': 1.0, 'Y': -1.0}, 'interpolation': 2}]}, 'perspective_c4_y': {'Points': [{'co': {'X': 1.0, 'Y': -1.0}, 'interpolation': 2}]}, 'position': 8.1, 'reader': {'acodec': 'aac', 'audio_bit_rate': 128000, 'audio_stream_index': 0, 'audio_timebase': {'den': 32000, 'num': 1}, 'channel_layout': 3, 'channels': 2, 'display_ratio': {'den': 9, 'num': 16}, 'duration': 682.3679809570312, 'file_size': '28186726', 'fps': {'den': 682361, 'num': 16377000}, 'has_audio': True, 'has_single_image': False, 'has_video': True, 'height': 720, 'interlaced_frame': False, 'metadata': {'compatible_brands': 'isommp42', 'creation_time': '2021-05-06T23:09:13.000000Z', 'handler_name': 'ISO Media file produced by Google Inc. Created on: 05/06/2021.', 'language': 'und', 'major_brand': 'mp42', 'minor_version': '0'}, 'path': 'C:/Users/josu_/Desktop/VIDEO_FRAMEWORK.mp4', 'pixel_format': 0, 'pixel_ratio': {'den': 1, 'num': 1}, 'sample_rate': 32000, 'top_field_first': True, 'type': 'FFmpegReader', 'vcodec': 'h264', 'video_bit_rate': 41307, 'video_length': '16377', 'video_stream_index': 1, 'video_timebase': {'den': 1000, 'num': 1}, 'width': 1280}, 'rotation': {'Points': [{'co': {'X': 1.0, 'Y': 0.0}, 'interpolation': 2}]}, 'scale': 1, 'scale_x': {'Points': [{'co': {'X': 1.0, 'Y': 1.0}, 'interpolation': 2}]}, 'scale_y': {'Points': [{'co': {'X': 1.0, 'Y': 1.0}, 'interpolation': 2}]}, 'shear_x': {'Points': [{'co': {'X': 1.0, 'Y': 0.0}, 'interpolation': 2}]}, 'shear_y': {'Points': [{'co': {'X': 1.0, 'Y': 0.0}, 'interpolation': 2}]}, 'start': 0.0, 'time': {'Points': [{'co': {'X': 1.0, 'Y': 1.0}, 'interpolation': 2}]}, 'volume': {'Points': [{'co': {'X': 1.0, 'Y': 1.0}, 'interpolation': 2}]}, 'wave_color': {'alpha': {'Points': [{'co': {'X': 1.0, 'Y': 255.0}, 'handle_left': {'X': 0.5, 'Y': 1.0}, 'handle_right': {'X': 0.5, 'Y': 0.0}, 'handle_type': 0, 'interpolation': 0}]}, 'blue': {'Points': [{'co': {'X': 1.0, 'Y': 255.0}, 'handle_left': {'X': 0.5, 'Y': 1.0}, 'handle_right': {'X': 0.5, 'Y': 0.0}, 'handle_type': 0, 'interpolation': 0}]}, 'green': {'Points': [{'co': {'X': 1.0, 'Y': 123.0}, 'handle_left': {'X': 0.5, 'Y': 1.0}, 'handle_right': {'X': 0.5, 'Y': 0.0}, 'handle_type': 0, 'interpolation': 0}]}, 'red': {'Points': [{'co': {'X': 1.0, 'Y': 0.0}, 'handle_left': {'X': 0.5, 'Y': 1.0}, 'handle_right': {'X': 0.5, 'Y': 0.0}, 'handle_type': 0, 'interpolation': 0}]}}, 'waveform': False, 'file_id': 'GYGVJ227I0', 'title': 'VIDEO_FRAMEWORK.mp4'} add: True partial: False remove: False
+project_data:INFO _set key: ['duration'] values: 700.4679809570313 add: False partial: False remove: False
+timeline_webview:INFO SortItems
+timeline_webview:INFO UpdateLayerIndex
+ main_window:INFO updateStatusChanged
+timeline_webview:INFO SortItems
+timeline_webview:INFO UpdateLayerIndex
+properties_model:INFO {'alpha': {'Points': [{'co': {'X': 1.0, 'Y': 1.0}, 'interpolation': 2}]}, 'anchor': 0, 'channel_filter': {'Points': [{'co': {'X': 1.0, 'Y': -1.0}, 'interpolation': 2}]}, 'channel_mapping': {'Points': [{'co': {'X': 1.0, 'Y': -1.0}, 'interpolation': 2}]}, 'crop_height': {'Points': [{'co': {'X': 1.0, 'Y': 1.0}, 'interpolation': 2}]}, 'crop_width': {'Points': [{'co': {'X': 1.0, 'Y': 1.0}, 'interpolation': 2}]}, 'crop_x': {'Points': [{'co': {'X': 1.0, 'Y': 0.0}, 'interpolation': 2}]}, 'crop_y': {'Points': [{'co': {'X': 1.0, 'Y': 0.0}, 'interpolation': 2}]}, 'display': 0, 'duration': 682.3679809570312, 'effects': [], 'end': 682.3679809570312, 'gravity': 4, 'has_audio': {'Points': [{'co': {'X': 1.0, 'Y': -1.0}, 'interpolation': 2}]}, 'has_video': {'Points': [{'co': {'X': 1.0, 'Y': -1.0}, 'interpolation': 2}]}, 'id': 'NB9TYH7W7L', 'layer': 6000000, 'location_x': {'Points': [{'co': {'X': 1.0, 'Y': 0.0}, 'interpolation': 2}]}, 'location_y': {'Points': [{'co': {'X': 1.0, 'Y': 0.0}, 'interpolation': 2}]}, 'mixing': 0, 'perspective_c1_x': {'Points': [{'co': {'X': 1.0, 'Y': -1.0}, 'interpolation': 2}]}, 'perspective_c1_y': {'Points': [{'co': {'X': 1.0, 'Y': -1.0}, 'interpolation': 2}]}, 'perspective_c2_x': {'Points': [{'co': {'X': 1.0, 'Y': -1.0}, 'interpolation': 2}]}, 'perspective_c2_y': {'Points': [{'co': {'X': 1.0, 'Y': -1.0}, 'interpolation': 2}]}, 'perspective_c3_x': {'Points': [{'co': {'X': 1.0, 'Y': -1.0}, 'interpolation': 2}]}, 'perspective_c3_y': {'Points': [{'co': {'X': 1.0, 'Y': -1.0}, 'interpolation': 2}]}, 'perspective_c4_x': {'Points': [{'co': {'X': 1.0, 'Y': -1.0}, 'interpolation': 2}]}, 'perspective_c4_y': {'Points': [{'co': {'X': 1.0, 'Y': -1.0}, 'interpolation': 2}]}, 'position': 8.1, 'reader': {'acodec': 'aac', 'audio_bit_rate': 128000, 'audio_stream_index': 0, 'audio_timebase': {'den': 32000, 'num': 1}, 'channel_layout': 3, 'channels': 2, 'display_ratio': {'den': 9, 'num': 16}, 'duration': 682.3679809570312, 'file_size': '28186726', 'fps': {'den': 682361, 'num': 16377000}, 'has_audio': True, 'has_single_image': False, 'has_video': True, 'height': 720, 'interlaced_frame': False, 'metadata': {'compatible_brands': 'isommp42', 'creation_time': '2021-05-06T23:09:13.000000Z', 'handler_name': 'ISO Media file produced by Google Inc. Created on: 05/06/2021.', 'language': 'und', 'major_brand': 'mp42', 'minor_version': '0'}, 'path': 'C:/Users/josu_/Desktop/VIDEO_FRAMEWORK.mp4', 'pixel_format': 0, 'pixel_ratio': {'den': 1, 'num': 1}, 'sample_rate': 32000, 'top_field_first': True, 'type': 'FFmpegReader', 'vcodec': 'h264', 'video_bit_rate': 41307, 'video_length': '16377', 'video_stream_index': 1, 'video_timebase': {'den': 1000, 'num': 1}, 'width': 1280}, 'rotation': {'Points': [{'co': {'X': 1.0, 'Y': 0.0}, 'interpolation': 2}]}, 'scale': 1, 'scale_x': {'Points': [{'co': {'X': 1.0, 'Y': 1.0}, 'interpolation': 2}]}, 'scale_y': {'Points': [{'co': {'X': 1.0, 'Y': 1.0}, 'interpolation': 2}]}, 'shear_x': {'Points': [{'co': {'X': 1.0, 'Y': 0.0}, 'interpolation': 2}]}, 'shear_y': {'Points': [{'co': {'X': 1.0, 'Y': 0.0}, 'interpolation': 2}]}, 'start': 0.0, 'time': {'Points': [{'co': {'X': 1.0, 'Y': 1.0}, 'interpolation': 2}]}, 'volume': {'Points': [{'co': {'X': 1.0, 'Y': 1.0}, 'interpolation': 2}]}, 'wave_color': {'alpha': {'Points': [{'co': {'X': 1.0, 'Y': 255.0}, 'handle_left': {'X': 0.5, 'Y': 1.0}, 'handle_right': {'X': 0.5, 'Y': 0.0}, 'handle_type': 0, 'interpolation': 0}]}, 'blue': {'Points': [{'co': {'X': 1.0, 'Y': 255.0}, 'handle_left': {'X': 0.5, 'Y': 1.0}, 'handle_right': {'X': 0.5, 'Y': 0.0}, 'handle_type': 0, 'interpolation': 0}]}, 'green': {'Points': [{'co': {'X': 1.0, 'Y': 123.0}, 'handle_left': {'X': 0.5, 'Y': 1.0}, 'handle_right': {'X': 0.5, 'Y': 0.0}, 'handle_type': 0, 'interpolation': 0}]}, 'red': {'Points': [{'co': {'X': 1.0, 'Y': 0.0}, 'handle_left': {'X': 0.5, 'Y': 1.0}, 'handle_right': {'X': 0.5, 'Y': 0.0}, 'handle_type': 0, 'interpolation': 0}]}}, 'waveform': False, 'file_id': 'GYGVJ227I0', 'title': 'VIDEO_FRAMEWORK.mp4'}
+properties_model:INFO updating clip properties model.
+ main_window:INFO updateStatusChanged
+preview_thread:INFO refreshFrame
+preview_thread:INFO self.player.Position(): 1
+ main_window:INFO main::addSelection: item_id: , item_type: effect, clear_existing: True
+ main_window:INFO main::addSelection: item_id: NB9TYH7W7L, item_type: clip, clear_existing: True
+properties_model:INFO Update item: clip
+properties_model:INFO Update frame to 1
+properties_model:INFO updating clip properties model.
+timeline_webview:INFO Dropping item on timeline - item_id: NB9TYH7W7L, item_type: clip
+project_data:INFO _set key: ['clips', {'id': 'NB9TYH7W7L'}] values: {'id': 'NB9TYH7W7L', 'layer': 6000000, 'position': 4.8, 'start': 0, 'end': 682.3679809570312} add: False partial: False remove: False
+timeline_webview:INFO SortItems
+timeline_webview:INFO UpdateLayerIndex
+properties_model:INFO {'id': 'NB9TYH7W7L', 'layer': 6000000, 'position': 4.8, 'start': 0, 'end': 682.3679809570312}
+properties_model:INFO updating clip properties model.
+ main_window:INFO updateStatusChanged
+preview_thread:INFO refreshFrame
+preview_thread:INFO self.player.Position(): 1
+properties_model:INFO Update frame to 1
+properties_model:INFO updating clip properties model.
+preview_thread:INFO refreshFrame
+preview_thread:INFO self.player.Position(): 1
+properties_model:INFO Update frame to 1
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 37
+preview_thread:INFO self.player.Position(): 37
+properties_model:INFO Update frame to 1
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 46
+preview_thread:INFO self.player.Position(): 46
+properties_model:INFO Update frame to 1
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 51
+preview_thread:INFO self.player.Position(): 51
+properties_model:INFO Update frame to 1
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 60
+preview_thread:INFO self.player.Position(): 60
+properties_model:INFO Update frame to 1
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 82
+preview_thread:INFO self.player.Position(): 82
+properties_model:INFO Update frame to 1
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 109
+preview_thread:INFO self.player.Position(): 109
+properties_model:INFO Update frame to 1
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 123
+preview_thread:INFO self.player.Position(): 123
+properties_model:INFO Update frame to 1
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 127
+preview_thread:INFO self.player.Position(): 127
+properties_model:INFO Update frame to 1
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 136
+preview_thread:INFO self.player.Position(): 136
+properties_model:INFO Update frame to 1
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 168
+preview_thread:INFO self.player.Position(): 168
+properties_model:INFO Update frame to 24
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 172
+preview_thread:INFO self.player.Position(): 172
+properties_model:INFO Update frame to 28
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 177
+preview_thread:INFO self.player.Position(): 177
+properties_model:INFO Update frame to 33
+properties_model:INFO updating clip properties model.
+properties_model:INFO Update frame to 33
+properties_model:INFO updating clip properties model.
+preview_thread:INFO onModeChanged
+properties_model:INFO Update frame to 362
+properties_model:INFO updating clip properties model.
+properties_model:INFO Update frame to 362
+properties_model:INFO updating clip properties model.
+preview_thread:INFO onModeChanged
+properties_model:INFO Update frame to 362
+properties_model:INFO updating clip properties model.
+preview_thread:INFO onModeChanged
+properties_model:INFO Update frame to 480
+properties_model:INFO updating clip properties model.
+properties_model:INFO Update frame to 480
+properties_model:INFO updating clip properties model.
+preview_thread:INFO onModeChanged
+ files_model:INFO updating files model.
+ files_model:INFO updating files model.
+ files_model:INFO updating files model.
+ main_window:INFO auto_save_project
+ main_window:INFO Creating backup of project file: D:\tareas\LIS\ProyectoLIS\.openshot_qt\backup.osp
+project_data:INFO Saving project file: D:\tareas\LIS\ProyectoLIS\.openshot_qt\backup.osp
+   json_data:ERROR Error while converting absolute paths to relative paths: path is on mount 'C:', start on mount 'D:'
+ main_window:INFO actionSnappingTool_trigger
+ main_window:INFO False
+properties_model:INFO Update frame to 480
+properties_model:INFO updating clip properties model.
+preview_thread:INFO onModeChanged
+properties_model:INFO Update frame to 725
+properties_model:INFO updating clip properties model.
+properties_model:INFO Update frame to 725
+properties_model:INFO updating clip properties model.
+preview_thread:INFO onModeChanged
+project_data:INFO _set key: ['clips', {'id': 'NB9TYH7W7L'}] values: {'id': 'NB9TYH7W7L', 'layer': 6000000, 'position': 0, 'start': 0, 'end': 682.3679809570312} add: False partial: False remove: False
+timeline_webview:INFO UpdateLayerIndex
+properties_model:INFO {'id': 'NB9TYH7W7L', 'layer': 6000000, 'position': 0, 'start': 0, 'end': 682.3679809570312}
+properties_model:INFO updating clip properties model.
+ main_window:INFO updateStatusChanged
+preview_thread:INFO refreshFrame
+preview_thread:INFO self.player.Position(): 869
+properties_model:INFO Update frame to 869
+properties_model:INFO updating clip properties model.
+timeline_webview:INFO SortItems
+project_data:INFO _set key: ['scale'] values: 20 add: False partial: False remove: False
+timeline_webview:INFO SortItems
+timeline_webview:INFO UpdateLayerIndex
+ main_window:INFO updateStatusChanged
+project_data:INFO _set key: ['scale'] values: 45 add: False partial: False remove: False
+timeline_webview:INFO SortItems
+timeline_webview:INFO UpdateLayerIndex
+ main_window:INFO updateStatusChanged
+timeline_webview:INFO redraw_audio_onTimeout
+project_data:INFO _set key: ['scale'] values: 60 add: False partial: False remove: False
+timeline_webview:INFO SortItems
+timeline_webview:INFO UpdateLayerIndex
+ main_window:INFO updateStatusChanged
+timeline_webview:INFO redraw_audio_onTimeout
+properties_model:INFO Update frame to 869
+properties_model:INFO updating clip properties model.
+preview_thread:INFO onModeChanged
+preview_thread:INFO previewFrame: 1423
+preview_thread:INFO self.player.Position(): 1423
+properties_model:INFO Update frame to 1423
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 1603
+preview_thread:INFO self.player.Position(): 1603
+properties_model:INFO Update frame to 1603
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 1765
+preview_thread:INFO self.player.Position(): 1765
+properties_model:INFO Update frame to 1765
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 1819
+preview_thread:INFO self.player.Position(): 1819
+properties_model:INFO Update frame to 1819
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 1909
+preview_thread:INFO self.player.Position(): 1909
+properties_model:INFO Update frame to 1909
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 2053
+preview_thread:INFO self.player.Position(): 2053
+properties_model:INFO Update frame to 2053
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 2071
+preview_thread:INFO self.player.Position(): 2071
+properties_model:INFO Update frame to 2071
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 2179
+preview_thread:INFO self.player.Position(): 2179
+properties_model:INFO Update frame to 2179
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 2251
+preview_thread:INFO self.player.Position(): 2251
+properties_model:INFO Update frame to 2251
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 2269
+preview_thread:INFO self.player.Position(): 2269
+properties_model:INFO Update frame to 2269
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 2287
+preview_thread:INFO self.player.Position(): 2287
+properties_model:INFO Update frame to 2287
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 2305
+preview_thread:INFO self.player.Position(): 2305
+properties_model:INFO Update frame to 2305
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 2323
+preview_thread:INFO self.player.Position(): 2323
+properties_model:INFO Update frame to 2323
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 2341
+preview_thread:INFO self.player.Position(): 2341
+properties_model:INFO Update frame to 2341
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 2413
+preview_thread:INFO self.player.Position(): 2413
+properties_model:INFO Update frame to 2413
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 2467
+preview_thread:INFO self.player.Position(): 2467
+properties_model:INFO Update frame to 2467
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 2503
+preview_thread:INFO self.player.Position(): 2503
+properties_model:INFO Update frame to 2503
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 2557
+preview_thread:INFO self.player.Position(): 2557
+properties_model:INFO Update frame to 2557
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 2575
+preview_thread:INFO self.player.Position(): 2575
+properties_model:INFO Update frame to 2575
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 2593
+preview_thread:INFO self.player.Position(): 2593
+properties_model:INFO Update frame to 2593
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 2611
+preview_thread:INFO self.player.Position(): 2611
+properties_model:INFO Update frame to 2611
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 2647
+preview_thread:INFO self.player.Position(): 2647
+properties_model:INFO Update frame to 2647
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 2719
+preview_thread:INFO self.player.Position(): 2719
+properties_model:INFO Update frame to 2719
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 3007
+preview_thread:INFO self.player.Position(): 3007
+properties_model:INFO Update frame to 3007
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 3349
+preview_thread:INFO self.player.Position(): 3349
+properties_model:INFO Update frame to 3349
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 3385
+preview_thread:INFO self.player.Position(): 3385
+properties_model:INFO Update frame to 3385
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 3403
+preview_thread:INFO self.player.Position(): 3403
+properties_model:INFO Update frame to 3403
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 3421
+preview_thread:INFO self.player.Position(): 3421
+properties_model:INFO Update frame to 3421
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 3457
+preview_thread:INFO self.player.Position(): 3457
+properties_model:INFO Update frame to 3457
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 3493
+preview_thread:INFO self.player.Position(): 3493
+properties_model:INFO Update frame to 3493
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 3511
+preview_thread:INFO self.player.Position(): 3511
+properties_model:INFO Update frame to 3511
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 3547
+preview_thread:INFO self.player.Position(): 3547
+properties_model:INFO Update frame to 3547
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 3565
+preview_thread:INFO self.player.Position(): 3565
+properties_model:INFO Update frame to 3565
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 3583
+preview_thread:INFO self.player.Position(): 3583
+properties_model:INFO Update frame to 3583
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 3601
+preview_thread:INFO self.player.Position(): 3601
+properties_model:INFO Update frame to 3601
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 3619
+preview_thread:INFO self.player.Position(): 3619
+properties_model:INFO Update frame to 3619
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 3637
+preview_thread:INFO self.player.Position(): 3637
+properties_model:INFO Update frame to 3637
+properties_model:INFO updating clip properties model.
+properties_model:INFO Update frame to 3859
+properties_model:INFO updating clip properties model.
+properties_model:INFO Update frame to 3859
+properties_model:INFO updating clip properties model.
+preview_thread:INFO onModeChanged
+properties_model:INFO Update frame to 3859
+properties_model:INFO updating clip properties model.
+preview_thread:INFO onModeChanged
+preview_thread:INFO previewFrame: 4069
+preview_thread:INFO self.player.Position(): 4069
+properties_model:INFO Update frame to 4069
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 4051
+preview_thread:INFO self.player.Position(): 4051
+properties_model:INFO Update frame to 4051
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 4033
+preview_thread:INFO self.player.Position(): 4033
+properties_model:INFO Update frame to 4033
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 4015
+preview_thread:INFO self.player.Position(): 4015
+properties_model:INFO Update frame to 4015
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 3997
+preview_thread:INFO self.player.Position(): 3997
+properties_model:INFO Update frame to 3997
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 3979
+preview_thread:INFO self.player.Position(): 3979
+properties_model:INFO Update frame to 3979
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 3961
+preview_thread:INFO self.player.Position(): 3961
+properties_model:INFO Update frame to 3961
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 3943
+preview_thread:INFO self.player.Position(): 3943
+properties_model:INFO Update frame to 3943
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 3925
+preview_thread:INFO self.player.Position(): 3925
+properties_model:INFO Update frame to 3925
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 3907
+preview_thread:INFO self.player.Position(): 3907
+properties_model:INFO Update frame to 3907
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 3871
+preview_thread:INFO self.player.Position(): 3871
+properties_model:INFO Update frame to 3871
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 3853
+preview_thread:INFO self.player.Position(): 3853
+properties_model:INFO Update frame to 3853
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 3835
+preview_thread:INFO self.player.Position(): 3835
+properties_model:INFO Update frame to 3835
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 3817
+preview_thread:INFO self.player.Position(): 3817
+properties_model:INFO Update frame to 3817
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 3799
+preview_thread:INFO self.player.Position(): 3799
+properties_model:INFO Update frame to 3799
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 3781
+preview_thread:INFO self.player.Position(): 3781
+properties_model:INFO Update frame to 3781
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 3763
+preview_thread:INFO self.player.Position(): 3763
+properties_model:INFO Update frame to 3763
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 3745
+preview_thread:INFO self.player.Position(): 3745
+properties_model:INFO Update frame to 3745
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 3727
+preview_thread:INFO self.player.Position(): 3727
+properties_model:INFO Update frame to 3727
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 3709
+preview_thread:INFO self.player.Position(): 3709
+properties_model:INFO Update frame to 3709
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 3691
+preview_thread:INFO self.player.Position(): 3691
+properties_model:INFO Update frame to 3691
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 3673
+preview_thread:INFO self.player.Position(): 3673
+properties_model:INFO Update frame to 3673
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 3655
+preview_thread:INFO self.player.Position(): 3655
+properties_model:INFO Update frame to 3655
+properties_model:INFO updating clip properties model.
+properties_model:INFO Update frame to 3742
+properties_model:INFO updating clip properties model.
+properties_model:INFO Update frame to 3742
+properties_model:INFO updating clip properties model.
+preview_thread:INFO onModeChanged
+preview_thread:INFO previewFrame: 3691
+preview_thread:INFO self.player.Position(): 3691
+properties_model:INFO Update frame to 3691
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 3673
+preview_thread:INFO self.player.Position(): 3673
+properties_model:INFO Update frame to 3673
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 3655
+preview_thread:INFO self.player.Position(): 3655
+properties_model:INFO Update frame to 3655
+properties_model:INFO updating clip properties model.
+properties_model:INFO Update frame to 3655
+properties_model:INFO updating clip properties model.
+preview_thread:INFO onModeChanged
+properties_model:INFO Update frame to 3682
+properties_model:INFO updating clip properties model.
+properties_model:INFO Update frame to 3682
+properties_model:INFO updating clip properties model.
+preview_thread:INFO onModeChanged
+properties_model:INFO Update frame to 3682
+properties_model:INFO updating clip properties model.
+preview_thread:INFO onModeChanged
+properties_model:INFO Update frame to 3686
+properties_model:INFO updating clip properties model.
+properties_model:INFO Update frame to 3686
+properties_model:INFO updating clip properties model.
+preview_thread:INFO onModeChanged
+properties_model:INFO Update frame to 3686
+properties_model:INFO updating clip properties model.
+preview_thread:INFO onModeChanged
+properties_model:INFO Update frame to 3690
+properties_model:INFO updating clip properties model.
+properties_model:INFO Update frame to 3690
+properties_model:INFO updating clip properties model.
+preview_thread:INFO onModeChanged
+properties_model:INFO Update frame to 3690
+properties_model:INFO updating clip properties model.
+preview_thread:INFO onModeChanged
+properties_model:INFO Update frame to 3699
+properties_model:INFO updating clip properties model.
+properties_model:INFO Update frame to 3699
+properties_model:INFO updating clip properties model.
+preview_thread:INFO onModeChanged
+timeline_webview:INFO $scope.ShowClipMenu
+ main_window:INFO main::addSelection: item_id: NB9TYH7W7L, item_type: clip, clear_existing: False
+timeline_webview:INFO ShowClipMenu: NB9TYH7W7L
+properties_model:INFO Update item: clip
+properties_model:INFO Update frame to 3699
+properties_model:INFO updating clip properties model.
+timeline_webview:INFO $scope.ShowClipMenu
+ main_window:INFO main::addSelection: item_id: NB9TYH7W7L, item_type: clip, clear_existing: False
+timeline_webview:INFO ShowClipMenu: NB9TYH7W7L
+properties_model:INFO Update item: clip
+properties_model:INFO Update frame to 3699
+properties_model:INFO updating clip properties model.
+ main_window:INFO auto_save_project
+ main_window:INFO Creating backup of project file: D:\tareas\LIS\ProyectoLIS\.openshot_qt\backup.osp
+project_data:INFO Saving project file: D:\tareas\LIS\ProyectoLIS\.openshot_qt\backup.osp
+   json_data:ERROR Error while converting absolute paths to relative paths: path is on mount 'C:', start on mount 'D:'
+ main_window:INFO actionAddMarker_trigger
+project_data:INFO _set key: ['markers'] values: {'position': 123.26666666666667, 'icon': 'blue.png', 'id': 'EBBDHAA93Y'} add: True partial: False remove: False
+timeline_webview:INFO SortItems
+timeline_webview:INFO UpdateLayerIndex
+ main_window:INFO updateStatusChanged
+properties_model:INFO Update frame to 3699
+properties_model:INFO updating clip properties model.
+preview_thread:INFO onModeChanged
+preview_thread:INFO previewFrame: 3817
+preview_thread:INFO self.player.Position(): 3817
+properties_model:INFO Update frame to 3817
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 3853
+preview_thread:INFO self.player.Position(): 3853
+properties_model:INFO Update frame to 3853
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 3907
+preview_thread:INFO self.player.Position(): 3907
+properties_model:INFO Update frame to 3907
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 3925
+preview_thread:INFO self.player.Position(): 3925
+properties_model:INFO Update frame to 3925
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 3979
+preview_thread:INFO self.player.Position(): 3979
+properties_model:INFO Update frame to 3979
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 3997
+preview_thread:INFO self.player.Position(): 3997
+properties_model:INFO Update frame to 3997
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 4087
+preview_thread:INFO self.player.Position(): 4087
+properties_model:INFO Update frame to 4087
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 4141
+preview_thread:INFO self.player.Position(): 4141
+properties_model:INFO Update frame to 4141
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 4195
+preview_thread:INFO self.player.Position(): 4195
+properties_model:INFO Update frame to 4195
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 4249
+preview_thread:INFO self.player.Position(): 4249
+properties_model:INFO Update frame to 4249
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 4303
+preview_thread:INFO self.player.Position(): 4303
+properties_model:INFO Update frame to 4303
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 4321
+preview_thread:INFO self.player.Position(): 4321
+properties_model:INFO Update frame to 4321
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 4411
+preview_thread:INFO self.player.Position(): 4411
+properties_model:INFO Update frame to 4411
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 4465
+preview_thread:INFO self.player.Position(): 4465
+properties_model:INFO Update frame to 4465
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 4483
+preview_thread:INFO self.player.Position(): 4483
+properties_model:INFO Update frame to 4483
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 4501
+preview_thread:INFO self.player.Position(): 4501
+properties_model:INFO Update frame to 4501
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 4519
+preview_thread:INFO self.player.Position(): 4519
+properties_model:INFO Update frame to 4519
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 4537
+preview_thread:INFO self.player.Position(): 4537
+properties_model:INFO Update frame to 4537
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 4555
+preview_thread:INFO self.player.Position(): 4555
+properties_model:INFO Update frame to 4555
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 4537
+preview_thread:INFO self.player.Position(): 4537
+properties_model:INFO Update frame to 4537
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 4483
+preview_thread:INFO self.player.Position(): 4483
+properties_model:INFO Update frame to 4483
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 4357
+preview_thread:INFO self.player.Position(): 4357
+properties_model:INFO Update frame to 4357
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 4249
+preview_thread:INFO self.player.Position(): 4249
+properties_model:INFO Update frame to 4249
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 4159
+preview_thread:INFO self.player.Position(): 4159
+properties_model:INFO Update frame to 4159
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 4123
+preview_thread:INFO self.player.Position(): 4123
+properties_model:INFO Update frame to 4123
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 4069
+preview_thread:INFO self.player.Position(): 4069
+properties_model:INFO Update frame to 4069
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 4033
+preview_thread:INFO self.player.Position(): 4033
+properties_model:INFO Update frame to 4033
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 4015
+preview_thread:INFO self.player.Position(): 4015
+properties_model:INFO Update frame to 4015
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 3961
+preview_thread:INFO self.player.Position(): 3961
+properties_model:INFO Update frame to 3961
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 3943
+preview_thread:INFO self.player.Position(): 3943
+properties_model:INFO Update frame to 3943
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 3907
+preview_thread:INFO self.player.Position(): 3907
+properties_model:INFO Update frame to 3907
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 3853
+preview_thread:INFO self.player.Position(): 3853
+properties_model:INFO Update frame to 3853
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 3781
+preview_thread:INFO self.player.Position(): 3781
+properties_model:INFO Update frame to 3781
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 3727
+preview_thread:INFO self.player.Position(): 3727
+properties_model:INFO Update frame to 3727
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 3673
+preview_thread:INFO self.player.Position(): 3673
+properties_model:INFO Update frame to 3673
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 3655
+preview_thread:INFO self.player.Position(): 3655
+properties_model:INFO Update frame to 3655
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 3637
+preview_thread:INFO self.player.Position(): 3637
+properties_model:INFO Update frame to 3637
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 3655
+preview_thread:INFO self.player.Position(): 3655
+properties_model:INFO Update frame to 3655
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 3691
+preview_thread:INFO self.player.Position(): 3691
+properties_model:INFO Update frame to 3691
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 3781
+preview_thread:INFO self.player.Position(): 3781
+properties_model:INFO Update frame to 3781
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 3871
+preview_thread:INFO self.player.Position(): 3871
+properties_model:INFO Update frame to 3871
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 4015
+preview_thread:INFO self.player.Position(): 4015
+properties_model:INFO Update frame to 4015
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 4123
+preview_thread:INFO self.player.Position(): 4123
+properties_model:INFO Update frame to 4123
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 4231
+preview_thread:INFO self.player.Position(): 4231
+properties_model:INFO Update frame to 4231
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 4339
+preview_thread:INFO self.player.Position(): 4339
+properties_model:INFO Update frame to 4339
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 4375
+preview_thread:INFO self.player.Position(): 4375
+properties_model:INFO Update frame to 4375
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 4447
+preview_thread:INFO self.player.Position(): 4447
+properties_model:INFO Update frame to 4447
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 4483
+preview_thread:INFO self.player.Position(): 4483
+properties_model:INFO Update frame to 4483
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 4501
+preview_thread:INFO self.player.Position(): 4501
+properties_model:INFO Update frame to 4501
+properties_model:INFO updating clip properties model.
+ main_window:INFO actionPreviousMarker_trigger
+preview_thread:INFO refreshFrame
+preview_thread:INFO self.player.Position(): 3699
+properties_model:INFO Update frame to 3699
+properties_model:INFO updating clip properties model.
+ main_window:INFO actionPreviousMarker_trigger
+preview_thread:INFO refreshFrame
+preview_thread:INFO self.player.Position(): 3699
+properties_model:INFO Update frame to 3699
+properties_model:INFO updating clip properties model.
+properties_model:INFO Update frame to 3754
+properties_model:INFO updating clip properties model.
+properties_model:INFO Update frame to 3754
+properties_model:INFO updating clip properties model.
+preview_thread:INFO onModeChanged
+ main_window:INFO actionPreviousMarker_trigger
+preview_thread:INFO refreshFrame
+preview_thread:INFO self.player.Position(): 3699
+properties_model:INFO Update frame to 3699
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 3799
+preview_thread:INFO self.player.Position(): 3799
+properties_model:INFO Update frame to 3799
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 3817
+preview_thread:INFO self.player.Position(): 3817
+properties_model:INFO Update frame to 3817
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 3835
+preview_thread:INFO self.player.Position(): 3835
+properties_model:INFO Update frame to 3835
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 3853
+preview_thread:INFO self.player.Position(): 3853
+properties_model:INFO Update frame to 3853
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 3889
+preview_thread:INFO self.player.Position(): 3889
+properties_model:INFO Update frame to 3889
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 3925
+preview_thread:INFO self.player.Position(): 3925
+properties_model:INFO Update frame to 3925
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 3997
+preview_thread:INFO self.player.Position(): 3997
+properties_model:INFO Update frame to 3997
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 4105
+preview_thread:INFO self.player.Position(): 4105
+properties_model:INFO Update frame to 4105
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 4267
+preview_thread:INFO self.player.Position(): 4267
+properties_model:INFO Update frame to 4267
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 4501
+preview_thread:INFO self.player.Position(): 4501
+properties_model:INFO Update frame to 4501
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 4663
+preview_thread:INFO self.player.Position(): 4663
+properties_model:INFO Update frame to 4663
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 4825
+preview_thread:INFO self.player.Position(): 4825
+properties_model:INFO Update frame to 4825
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 4933
+preview_thread:INFO self.player.Position(): 4933
+properties_model:INFO Update frame to 4933
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 5023
+preview_thread:INFO self.player.Position(): 5023
+properties_model:INFO Update frame to 5023
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 5095
+preview_thread:INFO self.player.Position(): 5095
+properties_model:INFO Update frame to 5095
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 5131
+preview_thread:INFO self.player.Position(): 5131
+properties_model:INFO Update frame to 5131
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 5185
+preview_thread:INFO self.player.Position(): 5185
+properties_model:INFO Update frame to 5185
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 5203
+preview_thread:INFO self.player.Position(): 5203
+properties_model:INFO Update frame to 5203
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 5221
+preview_thread:INFO self.player.Position(): 5221
+properties_model:INFO Update frame to 5221
+properties_model:INFO updating clip properties model.
+timeline_webview:INFO $scope.ShowMarkerMenu
+timeline_webview:INFO ShowMarkerMenu: EBBDHAA93Y
+ main_window:INFO actionRemoveMarker_trigger
+project_data:INFO _set key: ['markers', {'id': 'EBBDHAA93Y'}] values: None add: False partial: False remove: True
+timeline_webview:INFO SortItems
+timeline_webview:INFO UpdateLayerIndex
+ main_window:INFO updateStatusChanged
+preview_thread:INFO previewFrame: 4951
+preview_thread:INFO self.player.Position(): 4951
+properties_model:INFO Update frame to 4951
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 4087
+preview_thread:INFO self.player.Position(): 4087
+properties_model:INFO Update frame to 4087
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 4051
+preview_thread:INFO self.player.Position(): 4051
+properties_model:INFO Update frame to 4051
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 4015
+preview_thread:INFO self.player.Position(): 4015
+properties_model:INFO Update frame to 4015
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 3979
+preview_thread:INFO self.player.Position(): 3979
+properties_model:INFO Update frame to 3979
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 3943
+preview_thread:INFO self.player.Position(): 3943
+properties_model:INFO Update frame to 3943
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 3907
+preview_thread:INFO self.player.Position(): 3907
+properties_model:INFO Update frame to 3907
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 3889
+preview_thread:INFO self.player.Position(): 3889
+properties_model:INFO Update frame to 3889
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 3853
+preview_thread:INFO self.player.Position(): 3853
+properties_model:INFO Update frame to 3853
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 3817
+preview_thread:INFO self.player.Position(): 3817
+properties_model:INFO Update frame to 3817
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 3781
+preview_thread:INFO self.player.Position(): 3781
+properties_model:INFO Update frame to 3781
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 3691
+preview_thread:INFO self.player.Position(): 3691
+properties_model:INFO Update frame to 3691
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 3619
+preview_thread:INFO self.player.Position(): 3619
+properties_model:INFO Update frame to 3619
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 3601
+preview_thread:INFO self.player.Position(): 3601
+properties_model:INFO Update frame to 3601
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 3493
+preview_thread:INFO self.player.Position(): 3493
+properties_model:INFO Update frame to 3493
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 3475
+preview_thread:INFO self.player.Position(): 3475
+properties_model:INFO Update frame to 3475
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 3457
+preview_thread:INFO self.player.Position(): 3457
+properties_model:INFO Update frame to 3457
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 3475
+preview_thread:INFO self.player.Position(): 3475
+properties_model:INFO Update frame to 3475
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 3493
+preview_thread:INFO self.player.Position(): 3493
+properties_model:INFO Update frame to 3493
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 3511
+preview_thread:INFO self.player.Position(): 3511
+properties_model:INFO Update frame to 3511
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 3529
+preview_thread:INFO self.player.Position(): 3529
+properties_model:INFO Update frame to 3529
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 3547
+preview_thread:INFO self.player.Position(): 3547
+properties_model:INFO Update frame to 3547
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 3565
+preview_thread:INFO self.player.Position(): 3565
+properties_model:INFO Update frame to 3565
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 3583
+preview_thread:INFO self.player.Position(): 3583
+properties_model:INFO Update frame to 3583
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 3601
+preview_thread:INFO self.player.Position(): 3601
+properties_model:INFO Update frame to 3601
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 3619
+preview_thread:INFO self.player.Position(): 3619
+properties_model:INFO Update frame to 3619
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 3637
+preview_thread:INFO self.player.Position(): 3637
+properties_model:INFO Update frame to 3637
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 3655
+preview_thread:INFO self.player.Position(): 3655
+properties_model:INFO Update frame to 3655
+properties_model:INFO updating clip properties model.
+properties_model:INFO Update frame to 3655
+properties_model:INFO updating clip properties model.
+preview_thread:INFO onModeChanged
+properties_model:INFO Update frame to 3700
+properties_model:INFO updating clip properties model.
+properties_model:INFO Update frame to 3700
+properties_model:INFO updating clip properties model.
+preview_thread:INFO onModeChanged
+properties_model:INFO Update frame to 3700
+properties_model:INFO updating clip properties model.
+preview_thread:INFO onModeChanged
+properties_model:INFO Update frame to 3704
+properties_model:INFO updating clip properties model.
+properties_model:INFO Update frame to 3704
+properties_model:INFO updating clip properties model.
+preview_thread:INFO onModeChanged
+properties_model:INFO Update frame to 3704
+properties_model:INFO updating clip properties model.
+preview_thread:INFO onModeChanged
+properties_model:INFO Update frame to 3710
+properties_model:INFO updating clip properties model.
+properties_model:INFO Update frame to 3710
+properties_model:INFO updating clip properties model.
+preview_thread:INFO onModeChanged
+properties_model:INFO Update frame to 3710
+properties_model:INFO updating clip properties model.
+preview_thread:INFO onModeChanged
+properties_model:INFO Update frame to 3718
+properties_model:INFO updating clip properties model.
+properties_model:INFO Update frame to 3718
+properties_model:INFO updating clip properties model.
+preview_thread:INFO onModeChanged
+properties_model:INFO Update frame to 3718
+properties_model:INFO updating clip properties model.
+preview_thread:INFO onModeChanged
+properties_model:INFO Update frame to 3723
+properties_model:INFO updating clip properties model.
+properties_model:INFO Update frame to 3723
+properties_model:INFO updating clip properties model.
+preview_thread:INFO onModeChanged
+ main_window:INFO actionAddMarker_trigger
+project_data:INFO _set key: ['markers'] values: {'position': 124.06666666666666, 'icon': 'blue.png', 'id': '9EKW6E9H5A'} add: True partial: False remove: False
+timeline_webview:INFO SortItems
+timeline_webview:INFO UpdateLayerIndex
+ main_window:INFO updateStatusChanged
+properties_model:INFO Update frame to 3723
+properties_model:INFO updating clip properties model.
+preview_thread:INFO onModeChanged
+ main_window:INFO actionPreviousMarker_trigger
+preview_thread:INFO refreshFrame
+preview_thread:INFO self.player.Position(): 3723
+properties_model:INFO Update frame to 3723
+properties_model:INFO updating clip properties model.
+properties_model:INFO Update frame to 4296
+properties_model:INFO updating clip properties model.
+properties_model:INFO Update frame to 4296
+properties_model:INFO updating clip properties model.
+preview_thread:INFO onModeChanged
+timeline_webview:INFO $scope.ShowMarkerMenu
+timeline_webview:INFO ShowMarkerMenu: 9EKW6E9H5A
+ main_window:INFO actionRemoveMarker_trigger
+project_data:INFO _set key: ['markers', {'id': '9EKW6E9H5A'}] values: None add: False partial: False remove: True
+timeline_webview:INFO SortItems
+timeline_webview:INFO UpdateLayerIndex
+ main_window:INFO updateStatusChanged
+properties_model:INFO Update frame to 4296
+properties_model:INFO updating clip properties model.
+preview_thread:INFO onModeChanged
+preview_thread:INFO previewFrame: 4411
+preview_thread:INFO self.player.Position(): 4411
+properties_model:INFO Update frame to 4411
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 4393
+preview_thread:INFO self.player.Position(): 4393
+properties_model:INFO Update frame to 4393
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 4375
+preview_thread:INFO self.player.Position(): 4375
+properties_model:INFO Update frame to 4375
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 4357
+preview_thread:INFO self.player.Position(): 4357
+properties_model:INFO Update frame to 4357
+properties_model:INFO updating clip properties model.
+properties_model:INFO Update frame to 4387
+properties_model:INFO updating clip properties model.
+properties_model:INFO Update frame to 4387
+properties_model:INFO updating clip properties model.
+preview_thread:INFO onModeChanged
+properties_model:INFO Update frame to 4387
+properties_model:INFO updating clip properties model.
+preview_thread:INFO onModeChanged
+properties_model:INFO Update frame to 4392
+properties_model:INFO updating clip properties model.
+properties_model:INFO Update frame to 4392
+properties_model:INFO updating clip properties model.
+preview_thread:INFO onModeChanged
+properties_model:INFO Update frame to 4392
+properties_model:INFO updating clip properties model.
+preview_thread:INFO onModeChanged
+properties_model:INFO Update frame to 4397
+properties_model:INFO updating clip properties model.
+properties_model:INFO Update frame to 4397
+properties_model:INFO updating clip properties model.
+preview_thread:INFO onModeChanged
+ main_window:INFO actionAddMarker_trigger
+project_data:INFO _set key: ['markers'] values: {'position': 146.53333333333333, 'icon': 'blue.png', 'id': 'Z1BD9HH1MI'} add: True partial: False remove: False
+timeline_webview:INFO SortItems
+timeline_webview:INFO UpdateLayerIndex
+ main_window:INFO updateStatusChanged
+properties_model:INFO Update frame to 4397
+properties_model:INFO updating clip properties model.
+preview_thread:INFO onModeChanged
+ main_window:INFO actionPreviousMarker_trigger
+preview_thread:INFO refreshFrame
+preview_thread:INFO self.player.Position(): 4397
+properties_model:INFO Update frame to 4397
+properties_model:INFO updating clip properties model.
+properties_model:INFO Update frame to 4465
+properties_model:INFO updating clip properties model.
+properties_model:INFO Update frame to 4465
+properties_model:INFO updating clip properties model.
+preview_thread:INFO onModeChanged
+preview_thread:INFO previewFrame: 4321
+preview_thread:INFO self.player.Position(): 4321
+properties_model:INFO Update frame to 4321
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 4303
+preview_thread:INFO self.player.Position(): 4303
+properties_model:INFO Update frame to 4303
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 4285
+preview_thread:INFO self.player.Position(): 4285
+properties_model:INFO Update frame to 4285
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 4303
+preview_thread:INFO self.player.Position(): 4303
+properties_model:INFO Update frame to 4303
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 4321
+preview_thread:INFO self.player.Position(): 4321
+properties_model:INFO Update frame to 4321
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 4393
+preview_thread:INFO self.player.Position(): 4393
+properties_model:INFO Update frame to 4393
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 4483
+preview_thread:INFO self.player.Position(): 4483
+properties_model:INFO Update frame to 4483
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 4537
+preview_thread:INFO self.player.Position(): 4537
+properties_model:INFO Update frame to 4537
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 4555
+preview_thread:INFO self.player.Position(): 4555
+properties_model:INFO Update frame to 4555
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 4591
+preview_thread:INFO self.player.Position(): 4591
+properties_model:INFO Update frame to 4591
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 4645
+preview_thread:INFO self.player.Position(): 4645
+properties_model:INFO Update frame to 4645
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 4717
+preview_thread:INFO self.player.Position(): 4717
+properties_model:INFO Update frame to 4717
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 4771
+preview_thread:INFO self.player.Position(): 4771
+properties_model:INFO Update frame to 4771
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 4807
+preview_thread:INFO self.player.Position(): 4807
+properties_model:INFO Update frame to 4807
+properties_model:INFO updating clip properties model.
+ main_window:INFO actionPreviousMarker_trigger
+preview_thread:INFO refreshFrame
+preview_thread:INFO self.player.Position(): 4397
+properties_model:INFO Update frame to 4397
+properties_model:INFO updating clip properties model.
+ main_window:INFO actionAddMarker_trigger
+project_data:INFO _set key: ['markers'] values: {'position': 146.53333333333333, 'icon': 'blue.png', 'id': 'V7IZ84TD5J'} add: True partial: False remove: False
+timeline_webview:INFO SortItems
+timeline_webview:INFO UpdateLayerIndex
+ main_window:INFO updateStatusChanged
+preview_thread:INFO previewFrame: 4411
+preview_thread:INFO self.player.Position(): 4411
+properties_model:INFO Update frame to 4411
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 4393
+preview_thread:INFO self.player.Position(): 4393
+properties_model:INFO Update frame to 4393
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 4375
+preview_thread:INFO self.player.Position(): 4375
+properties_model:INFO Update frame to 4375
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 4393
+preview_thread:INFO self.player.Position(): 4393
+properties_model:INFO Update frame to 4393
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 4375
+preview_thread:INFO self.player.Position(): 4375
+properties_model:INFO Update frame to 4375
+properties_model:INFO updating clip properties model.
+ main_window:INFO actionAddMarker_trigger
+project_data:INFO _set key: ['markers'] values: {'position': 145.8, 'icon': 'blue.png', 'id': '4QDUHWGUWP'} add: True partial: False remove: False
+timeline_webview:INFO SortItems
+timeline_webview:INFO UpdateLayerIndex
+ main_window:INFO updateStatusChanged
+properties_model:INFO Update frame to 4375
+properties_model:INFO updating clip properties model.
+preview_thread:INFO onModeChanged
+properties_model:INFO Update frame to 4414
+properties_model:INFO updating clip properties model.
+properties_model:INFO Update frame to 4414
+properties_model:INFO updating clip properties model.
+preview_thread:INFO onModeChanged
+timeline_webview:INFO $scope.ShowPlayheadMenu
+timeline_webview:INFO ShowPlayheadMenu: 147.1
+timeline_webview:INFO $scope.ShowClipMenu
+ main_window:INFO main::addSelection: item_id: NB9TYH7W7L, item_type: clip, clear_existing: False
+timeline_webview:INFO ShowClipMenu: NB9TYH7W7L
+properties_model:INFO Update item: clip
+properties_model:INFO Update frame to 4414
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 4429
+preview_thread:INFO self.player.Position(): 4429
+properties_model:INFO Update frame to 4429
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 4447
+preview_thread:INFO self.player.Position(): 4447
+properties_model:INFO Update frame to 4447
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 4465
+preview_thread:INFO self.player.Position(): 4465
+properties_model:INFO Update frame to 4465
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 4483
+preview_thread:INFO self.player.Position(): 4483
+properties_model:INFO Update frame to 4483
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 4501
+preview_thread:INFO self.player.Position(): 4501
+properties_model:INFO Update frame to 4501
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 4519
+preview_thread:INFO self.player.Position(): 4519
+properties_model:INFO Update frame to 4519
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 4573
+preview_thread:INFO self.player.Position(): 4573
+properties_model:INFO Update frame to 4573
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 4645
+preview_thread:INFO self.player.Position(): 4645
+properties_model:INFO Update frame to 4645
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 4735
+preview_thread:INFO self.player.Position(): 4735
+properties_model:INFO Update frame to 4735
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 4753
+preview_thread:INFO self.player.Position(): 4753
+properties_model:INFO Update frame to 4753
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 4933
+preview_thread:INFO self.player.Position(): 4933
+properties_model:INFO Update frame to 4933
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 5059
+preview_thread:INFO self.player.Position(): 5059
+properties_model:INFO Update frame to 5059
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 5113
+preview_thread:INFO self.player.Position(): 5113
+properties_model:INFO Update frame to 5113
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 5131
+preview_thread:INFO self.player.Position(): 5131
+properties_model:INFO Update frame to 5131
+properties_model:INFO updating clip properties model.
+timeline_webview:INFO $scope.ShowMarkerMenu
+timeline_webview:INFO ShowMarkerMenu: 4QDUHWGUWP
+ main_window:INFO actionRemoveMarker_trigger
+project_data:INFO _set key: ['markers', {'id': '4QDUHWGUWP'}] values: None add: False partial: False remove: True
+timeline_webview:INFO SortItems
+timeline_webview:INFO UpdateLayerIndex
+ main_window:INFO updateStatusChanged
+timeline_webview:INFO $scope.ShowMarkerMenu
+timeline_webview:INFO ShowMarkerMenu: V7IZ84TD5J
+ main_window:INFO actionRemoveMarker_trigger
+project_data:INFO _set key: ['markers', {'id': 'V7IZ84TD5J'}] values: None add: False partial: False remove: True
+timeline_webview:INFO SortItems
+timeline_webview:INFO UpdateLayerIndex
+ main_window:INFO updateStatusChanged
+timeline_webview:INFO $scope.ShowMarkerMenu
+timeline_webview:INFO ShowMarkerMenu: Z1BD9HH1MI
+ main_window:INFO actionRemoveMarker_trigger
+project_data:INFO _set key: ['markers', {'id': 'Z1BD9HH1MI'}] values: None add: False partial: False remove: True
+timeline_webview:INFO SortItems
+timeline_webview:INFO UpdateLayerIndex
+ main_window:INFO updateStatusChanged
+preview_thread:INFO previewFrame: 5059
+preview_thread:INFO self.player.Position(): 5059
+properties_model:INFO Update frame to 5059
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 5041
+preview_thread:INFO self.player.Position(): 5041
+properties_model:INFO Update frame to 5041
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 5023
+preview_thread:INFO self.player.Position(): 5023
+properties_model:INFO Update frame to 5023
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 5005
+preview_thread:INFO self.player.Position(): 5005
+properties_model:INFO Update frame to 5005
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 4987
+preview_thread:INFO self.player.Position(): 4987
+properties_model:INFO Update frame to 4987
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 4969
+preview_thread:INFO self.player.Position(): 4969
+properties_model:INFO Update frame to 4969
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 4951
+preview_thread:INFO self.player.Position(): 4951
+properties_model:INFO Update frame to 4951
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 4933
+preview_thread:INFO self.player.Position(): 4933
+properties_model:INFO Update frame to 4933
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 4915
+preview_thread:INFO self.player.Position(): 4915
+properties_model:INFO Update frame to 4915
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 4879
+preview_thread:INFO self.player.Position(): 4879
+properties_model:INFO Update frame to 4879
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 4861
+preview_thread:INFO self.player.Position(): 4861
+properties_model:INFO Update frame to 4861
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 4843
+preview_thread:INFO self.player.Position(): 4843
+properties_model:INFO Update frame to 4843
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 4807
+preview_thread:INFO self.player.Position(): 4807
+properties_model:INFO Update frame to 4807
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 4789
+preview_thread:INFO self.player.Position(): 4789
+properties_model:INFO Update frame to 4789
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 4771
+preview_thread:INFO self.player.Position(): 4771
+properties_model:INFO Update frame to 4771
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 4753
+preview_thread:INFO self.player.Position(): 4753
+properties_model:INFO Update frame to 4753
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 4735
+preview_thread:INFO self.player.Position(): 4735
+properties_model:INFO Update frame to 4735
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 4717
+preview_thread:INFO self.player.Position(): 4717
+properties_model:INFO Update frame to 4717
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 4699
+preview_thread:INFO self.player.Position(): 4699
+properties_model:INFO Update frame to 4699
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 4681
+preview_thread:INFO self.player.Position(): 4681
+properties_model:INFO Update frame to 4681
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 4663
+preview_thread:INFO self.player.Position(): 4663
+properties_model:INFO Update frame to 4663
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 4645
+preview_thread:INFO self.player.Position(): 4645
+properties_model:INFO Update frame to 4645
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 4627
+preview_thread:INFO self.player.Position(): 4627
+properties_model:INFO Update frame to 4627
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 4609
+preview_thread:INFO self.player.Position(): 4609
+properties_model:INFO Update frame to 4609
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 4591
+preview_thread:INFO self.player.Position(): 4591
+properties_model:INFO Update frame to 4591
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 4573
+preview_thread:INFO self.player.Position(): 4573
+properties_model:INFO Update frame to 4573
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 4555
+preview_thread:INFO self.player.Position(): 4555
+properties_model:INFO Update frame to 4555
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 4537
+preview_thread:INFO self.player.Position(): 4537
+properties_model:INFO Update frame to 4537
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 4519
+preview_thread:INFO self.player.Position(): 4519
+properties_model:INFO Update frame to 4519
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 4501
+preview_thread:INFO self.player.Position(): 4501
+properties_model:INFO Update frame to 4501
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 4483
+preview_thread:INFO self.player.Position(): 4483
+properties_model:INFO Update frame to 4483
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 4465
+preview_thread:INFO self.player.Position(): 4465
+properties_model:INFO Update frame to 4465
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 4447
+preview_thread:INFO self.player.Position(): 4447
+properties_model:INFO Update frame to 4447
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 4429
+preview_thread:INFO self.player.Position(): 4429
+properties_model:INFO Update frame to 4429
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 4411
+preview_thread:INFO self.player.Position(): 4411
+properties_model:INFO Update frame to 4411
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 4393
+preview_thread:INFO self.player.Position(): 4393
+properties_model:INFO Update frame to 4393
+properties_model:INFO updating clip properties model.
+properties_model:INFO Update frame to 4393
+properties_model:INFO updating clip properties model.
+preview_thread:INFO onModeChanged
+preview_thread:INFO previewFrame: 4375
+preview_thread:INFO self.player.Position(): 4375
+properties_model:INFO Update frame to 4375
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 4357
+preview_thread:INFO self.player.Position(): 4357
+properties_model:INFO Update frame to 4357
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 4339
+preview_thread:INFO self.player.Position(): 4339
+properties_model:INFO Update frame to 4339
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 4321
+preview_thread:INFO self.player.Position(): 4321
+properties_model:INFO Update frame to 4321
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 4303
+preview_thread:INFO self.player.Position(): 4303
+properties_model:INFO Update frame to 4303
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 4285
+preview_thread:INFO self.player.Position(): 4285
+properties_model:INFO Update frame to 4285
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 4267
+preview_thread:INFO self.player.Position(): 4267
+properties_model:INFO Update frame to 4267
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 4249
+preview_thread:INFO self.player.Position(): 4249
+properties_model:INFO Update frame to 4249
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 4231
+preview_thread:INFO self.player.Position(): 4231
+properties_model:INFO Update frame to 4231
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 4213
+preview_thread:INFO self.player.Position(): 4213
+properties_model:INFO Update frame to 4213
+properties_model:INFO updating clip properties model.
+preview_thread:INFO previewFrame: 4195
+preview_thread:INFO self.player.Position(): 4195
+properties_model:INFO Update frame to 4195
+properties_model:INFO updating clip properties model.
+properties_model:INFO Update frame to 4338
+properties_model:INFO updating clip properties model.
+properties_model:INFO Update frame to 4338
+properties_model:INFO updating clip properties model.
+preview_thread:INFO onModeChanged
+properties_model:INFO Update frame to 4338
+properties_model:INFO updating clip properties model.
+preview_thread:INFO onModeChanged
+properties_model:INFO Update frame to 4360
+properties_model:INFO updating clip properties model.
+properties_model:INFO Update frame to 4360
+properties_model:INFO updating clip properties model.
+preview_thread:INFO onModeChanged
+properties_model:INFO Update frame to 4360
+properties_model:INFO updating clip properties model.
+preview_thread:INFO onModeChanged
+properties_model:INFO Update frame to 4364
+properties_model:INFO updating clip properties model.
+properties_model:INFO Update frame to 4364
+properties_model:INFO updating clip properties model.
+preview_thread:INFO onModeChanged
+properties_model:INFO Update frame to 4364
+properties_model:INFO updating clip properties model.
+preview_thread:INFO onModeChanged
+properties_model:INFO Update frame to 4375
+properties_model:INFO updating clip properties model.
+properties_model:INFO Update frame to 4375
+properties_model:INFO updating clip properties model.
+preview_thread:INFO onModeChanged
+properties_model:INFO Update frame to 4375
+properties_model:INFO updating clip properties model.
+preview_thread:INFO onModeChanged
+properties_model:INFO Update frame to 4395
+properties_model:INFO updating clip properties model.
+properties_model:INFO Update frame to 4395
+properties_model:INFO updating clip properties model.
+preview_thread:INFO onModeChanged
+ main_window:INFO actionAddMarker_trigger
+project_data:INFO _set key: ['markers'] values: {'position': 146.46666666666667, 'icon': 'blue.png', 'id': 'KG01U05BCS'} add: True partial: False remove: False
+timeline_webview:INFO SortItems
+timeline_webview:INFO UpdateLayerIndex
+ main_window:INFO updateStatusChanged
+properties_model:INFO Update frame to 4395
+properties_model:INFO updating clip properties model.
+preview_thread:INFO onModeChanged
+ main_window:INFO actionPreviousMarker_trigger
+preview_thread:INFO refreshFrame
+preview_thread:INFO self.player.Position(): 4395
+properties_model:INFO Update frame to 4395
+properties_model:INFO updating clip properties model.
+properties_model:INFO Update frame to 4892
+properties_model:INFO updating clip properties model.
+properties_model:INFO Update frame to 4892
+properties_model:INFO updating clip properties model.
+preview_thread:INFO onModeChanged
+ main_window:INFO auto_save_project
+ main_window:INFO Creating backup of project file: D:\tareas\LIS\ProyectoLIS\.openshot_qt\backup.osp
+project_data:INFO Saving project file: D:\tareas\LIS\ProyectoLIS\.openshot_qt\backup.osp
+   json_data:ERROR Error while converting absolute paths to relative paths: path is on mount 'C:', start on mount 'D:'
+properties_model:INFO Update frame to 4892
+properties_model:INFO updating clip properties model.
+preview_thread:INFO onModeChanged
+properties_model:INFO Update frame to 4951
+properties_model:INFO updating clip properties model.
+properties_model:INFO Update frame to 4951
+properties_model:INFO updating clip properties model.
+preview_thread:INFO onModeChanged
+ main_window:INFO Prompt user to save project
+ main_window:INFO ---------------- Shutting down -----------------
+preview_thread:INFO exiting thread
+   thumbnail:INFO Shutting down thumbnail server: ('127.0.0.1', 50803)
+     metrics:INFO Track metric: [200] http://www.google-analytics.com/collect?cid=52750eaa-98d8-4a52-af01-0bd864bb2903&v=1&tid=UA-4381101-5&an=OpenShot+Video+Editor&aip=1&aid=org.openshot.openshot-qt&av=2.5.1&ul=en-us&ua=Mozilla%2F5.0+%28Windows+NT+10%3B+10.0.19041%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F37.0.2062.120+Safari%2F537.36&cd1=0.2.5&cd2=3.7.4&cd3=5.12.4&cd4=5.12.3&cd5=Windows+10-10.0.19041--&t=screenview&sc=end&cd=close-app | (35 bytes)
+  exceptions:ERROR Unhandled Exception
+Traceback (most recent call last):
+  File "D:\apps\OpenShot Video Editor\windows\views\timeline_webview.py", line 2929, in render_cache_json
+    cache_object = get_app().window.timeline_sync.timeline.GetCache()
+AttributeError: 'NoneType' object has no attribute 'GetCache'
+preview_thread:INFO onModeChanged
+     metrics:INFO Track exception: [200] http://www.openshot.org/exception/json/ | *failed-recording-exception*: Control/space characters not allowed (key=b":1:Windows-2.5.1-AttributeError: 'NoneType' objec")
+         app:INFO             OpenShot's session ended            
+         app:INFO             Sun May  9 10:15:13 2021            
+         app:INFO ================================================
